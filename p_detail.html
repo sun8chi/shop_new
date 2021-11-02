@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <title>商店</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav aui-text-left header" id="headerTop">
+      <a href="javascript:history.back()" class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-left"></span>
+      </a>
+      <div class="aui-title">產品細節</div>
+    </header>
+    <!-- 商品輪播圖 -->
+    <section class="aui-padded-b-0">
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="image/product/01.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/02.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/04.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/05.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-pagination pagHome"></div>
+      </div>
+    </section>
+    <!-- 產品名稱/價格 -->
+    <section class="aui-bg-white aui-padded-t-10 aui-margin-b-10 p_info">
+      <div class="aui-content-padded aui-margin-t-0">
+        <div class="aui-title aui-ellipsis-2">長得可愛又好吃餅乾在這裡</div>
+        <div class="aui-margin-t-10">
+          <p class="color-orange">NT$<span class="aui-font-size-20">590</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- 團購優惠 -->
+    <div class="aui-content aui-margin-b-15">
+      <ul class="aui-list aui-list-in aui-bg-white">
+        <li class="aui-list-item btn-popup" data-popup="popup-addcart">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-title">規格：尺寸</div>
+            <div class="aui-list-item-right"><i class="aui-iconfont aui-icon-plus"></i></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 產品細節tab -->
+    <section class="p_detail aui-bg-white">
+      <div class="aui-tab" id="tab">
+        <div class="aui-tab-item" id="p_intro">商品介紹</div>
+        <div class="aui-tab-item aui-active" id="p_type">產品規格</div>
+      </div>
+      <div class="aui-tab-content p_intro aui-bg-white aui-content-padded">
+        這是一個很好吃的餅乾唷
+      </div>
+      <div class="aui-tab-content p_type aui-content-padded">
+        顏色：黃色/綠色/紅色 尺寸：大/小
+      </div>
+    </section>
+    <!-- 加入購物車popup -->
+    <div class="popup popup-addcart">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">好吃的餅乾</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- 產品主圖 -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-select-list aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-media-list-item-inner">
+                <div class="aui-list-item-media">
+                  <a href="detail.html" target="_blank"><img src="image/product/01.jpg"/></a>
+                </div>
+                <div class="aui-list-item-inner">
+                  <div class="aui-list-item-text aui-ellipsis-2">
+                    濃郁漂亮又好吃
+                  </div>
+                  <div class="aui-info aui-margin-t-5 " style="padding:0">
+                    <div class="aui-info-item aui-text-danger shop-price">
+                      NT$ 650
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="aui-content">
+          <div class="aui-card-list">
+            <div class="aui-card-list-header aui-card-list-user aui-border-b">
+              <div class="aui-card-list-user-avatar">
+                <img src="image/product/01.jpg" class="aui-img-round" />
+              </div>
+              <div class="aui-card-list-user-name">
+                <div>原味 <small>(PS228172936)</small></div>
+                <div class="counter">
+                  <span class="dis"> - </span>
+                  <span class="num">1</span>
+                  <span class="add">+</span>
+                </div>
+              </div>
+              <div class="aui-card-list-user-info">
+                <small>市場價 NT$25000 / 袋</small>
+                <div class="price"><span class="color-orange">NT$9500</span> / 袋</div>
+              </div>
+            </div>
+          </div>
+          <div class="aui-card-list">
+            <div class="aui-card-list-header aui-card-list-user aui-border-b">
+              <div class="aui-card-list-user-avatar">
+                <img src="image/product/01.jpg" class="aui-img-round" />
+              </div>
+              <div class="aui-card-list-user-name">
+                <div>辣味 <small>(PS228172936)</small></div>
+                <div class="counter">
+                  <span class="dis"> - </span>
+                  <span class="num">1</span>
+                  <span class="add">+</span>
+                </div>
+              </div>
+              <div class="aui-card-list-user-info">
+                <small>市場價 NT$25000 / 袋</small>
+                <div class="price"><span class="color-orange">NT$9500</span> / 袋</div>
+              </div>
+            </div>
+          </div>
+          <div class="aui-card-list">
+            <div class="aui-card-list-header aui-card-list-user aui-border-b">
+              <div class="aui-card-list-user-avatar">
+                <img src="image/product/01.jpg" class="aui-img-round" />
+              </div>
+              <div class="aui-card-list-user-name">
+                <div>海苔 <small>(PS228172936)</small></div>
+                <div class="counter">
+                  <span class="dis"> - </span>
+                  <span class="num">1</span>
+                  <span class="add">+</span>
+                </div>
+              </div>
+              <div class="aui-card-list-user-info">
+                <small>市場價 NT$25000 / 袋</small>
+                <div class="price"><span class="color-orange">NT$9500</span> / 袋</div>
+              </div>
+            </div>
+          </div>
+          <div class="aui-card-list">
+            <div class="aui-card-list-header aui-card-list-user aui-border-b">
+              <div class="aui-card-list-user-avatar">
+                <img src="image/product/01.jpg" class="aui-img-round" />
+              </div>
+              <div class="aui-card-list-user-name">
+                <div>胡椒 <small>(PS228172936)</small></div>
+                <div class="counter">
+                  <span class="dis"> - </span>
+                  <span class="num">1</span>
+                  <span class="add">+</span>
+                </div>
+              </div>
+              <div class="aui-card-list-user-info">
+                <small>市場價 NT$25000 / 袋</small>
+                <div class="price"><span class="color-orange">NT$9500</span> / 袋</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aui-content popup-footer">
+        <div class="aui-btn aui-btn-block bg-default">加入購物車</div>
+      </div>
+    </div>
+    <footer class="aui-bar aui-bar-tab aui-margin-t-15">
+      <a data-popup="popup-addcart" class="aui-bar-tab-item bg-default aui-text-white btn-popup" tapmode>加入購物車</a>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/aui-tab.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script type="text/javascript">
+    // 介紹的 tab
+    apiready = function() {
+      api.parseTapmode();
+    };
+    var tab = new auiTab(
+      {
+        element: document.getElementById('tab')
+      },
+      function(ret) {
+        console.log(ret);
+      }
+    );
+
+    $(document).ready(function() {
+      $('.p_type').hide();
+      $('.p_detail .aui-tab-item').click(function() {
+        var N = $(this).attr('id');
+        $('.p_detail .aui-tab-content').hide();
+        $('.' + N).show();
+      });
+    });
+  </script>
+</html>

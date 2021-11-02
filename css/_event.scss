@@ -1,0 +1,146 @@
+.product_list_sm {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  .product_list_sm_item {
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    .icon_delete {
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      border-radius: 50px;
+      width: 1rem;
+      height: 1rem;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      background: #fff;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .image_round {
+      margin: auto;
+    }
+    h4 {
+      font-size: 12px;
+      color: #777;
+    }
+  }
+}
+.label_list {
+  display: flex;
+  flex-wrap: wrap;
+  .label_list_item {
+    position: relative;
+    background: #777;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.75rem;
+    .icon_delete {
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      border-radius: 50px;
+      width: 1rem;
+      height: 1rem;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      background: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      color: #222;
+      text-align: center;
+    }
+    .aui-switch {
+      position: absolute;
+      right: -10px;
+      top: -5px;
+    }
+  }
+}
+.event_popup {
+  h3 {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.search {
+  margin-bottom: 0.75rem;
+  input {
+    background: #eee;
+    border-radius: 4px;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+}
+.list_image_radio {
+  li {
+    padding: 0.35rem 0;
+    // border-bottom: 1px solid #eee;
+    label {
+      display: flex;
+      align-items: center;
+      p {
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 0.5rem;
+      }
+      input {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.image_round {
+  position: relative;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  .aui-switch {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+  }
+}
+
+.switch_sm {
+  width: 1.5rem;
+  height: 0.8rem;
+  &::before {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  &:checked::before {
+    left: 0.65rem;
+  }
+}
+
+.scrollX {
+  overflow: scroll;
+  flex-wrap: nowrap;
+  > div {
+    flex-shrink: 0;
+  }
+}
+a.btn_xs {
+  background: $color-green;
+  color: #fff!important;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0.25rem .5rem;
+  font-size: 13px;
+}
+.jcc {
+  justify-content: center!important;
+}
+.acc {
+  align-content: center!important;
+}

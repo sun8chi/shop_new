@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="css/admin.css?v10" />
+    <title>商店</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav" id="headerTop">
+      <a href="index.html" class="aui-pull-left aui-btn">
+        <ion-icon class="aui-iconfont" name="home-outline"></ion-icon>
+      </a>
+      <div class="aui-title">店家後台</div>
+      <!-- 更多功能按鈕 -->
+      <a href="#" class="aui-pull-right aui-btn toggleRightMenu">
+        <ion-icon class="aui-iconfont" name="menu-outline"></ion-icon>
+      </a>
+      <!-- 搜尋按鈕 -->
+      <a href="#" class="aui-pull-right aui-btn toggleSearchBar">
+        <ion-icon class="aui-iconfont" name="search-outline"></ion-icon>
+      </a>
+    </header>
+    <!-- 搜尋bar -->
+    <div class="search_bar stickytop">
+      <div class="search_input mb_1">
+        <input type="text" placeholder="請輸入關鍵字" />
+      </div>
+      <div class="mb_1 search_select">
+        <select>
+          <option>請選擇分類</option>
+          <option>分類A</option>
+          <option>分類B</option>
+          <option>分類C</option>
+        </select>
+      </div>
+      <div class="search_checkbox mb_1">
+        <div class="item">
+          <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="項目1" name="type" /> 項目1</label>
+        </div>
+        <div class="item">
+          <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="項目2" name="type" /> 項目2</label>
+        </div>
+        <div class="item">
+          <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="項目3" name="type" /> 項目3</label>
+        </div>
+        <div class="item">
+          <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="項目4" name="type" /> 項目4</label>
+        </div>
+        <div class="item">
+          <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="項目4" name="type" /> 項目4</label>
+        </div>
+        <div class="item">
+          <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="項目4" name="type" /> 項目4</label>
+        </div>
+      </div>
+      <a href="#" class="aui-btn bg-default aui-btn-block">搜尋</a>
+    </div>
+    <!-- 首頁上方輪播圖 home-slider-->
+    <section class="pb_0">
+      <!-- 編輯按鈕 -->
+      <div class="aui-flex-col">
+        <div class="aui-flex-item-5">
+          <a href="#" class="add_btn btn-popup aui-bg-gray" data-popup="popup-editCate">編輯此輪播 <ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+        <div class="aui-flex-item-4 ml-auto">
+          <a href="#" class="add_btn btn-popup" data-popup="popup-addSlider">新增輪播圖</a>
+        </div>
+      </div>
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide p-relative">
+            <img src="image/home-slider/fakeimg.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination pagHome"></div>
+      </div>
+    </section>
+    <!-- 分類 -->
+    <div class="scroll_bar stickytop">
+      <div class="scroll_item active"><span>所有分類</span></div>
+      <div class="scroll_item" id="cate01"><span>女嬰用品</span></div>
+      <div class="scroll_item" id="cate02"><span>家電</span></div>
+      <div class="scroll_item" id="cate03"><span>經典限量球鞋</span></div>
+      <div class="scroll_item" id="cate04"><span>美妝保養</span></div>
+      <div class="scroll_item" id="cate05"><span>聖誕好禮</span></div>
+      <div class="scroll_item" id="cate06"><span>3C周邊</span></div>
+      <div class="scroll_item" id="cate07"><span>家電用品</span></div>
+    </div>
+    <!-- 編輯按鈕 -->
+    <div class="aui-flex-col">
+      <div class="aui-flex-item-4">
+        <a href="#" class="add_btn btn-popup aui-bg-gray" data-popup="popup-editCate">編輯此分類</a>
+      </div>
+      <div class="aui-flex-item-4">
+        <a href="#" class="add_btn btn-popup" data-popup="popup-addCate">新增分類</a>
+      </div>
+      <div class="aui-flex-item-4">
+        <a href="#" class="add_btn edit_add_product btn-popup" data-popup="popup-addProdut">新增商品</a>
+      </div>
+    </div>
+    <a class="fixd_edit_btn btn-popup" data-popup="popup-editMore">
+      編輯多選
+    </a>
+    <!-- 多規格商品 -->
+    <section class="card-product aui-content aui-margin-b-15">
+      <div class="aui-flex-col">
+        <!-- item -->
+        <div class="aui-flex-item-6">
+          <div class="aui-card-list">
+            <input class="aui-radio p_list_radio" type="checkbox" />
+            <div class="aui-card-list-content">
+              <a href="#" class="delete_btn deleteBtn">X</a>
+              <img src="image/product/fakeimg.png" />
+              <div class="product_btn_group">
+                <a href="#" class="btn-popup" data-popup="popup-addProdut">編輯商品</a>
+                <a href="#" class="aui-bg-info btn-popup" data-popup="popup-addSale">新增活動</a>
+              </div>
+            </div>
+            <div class="aui-card-list-header aui-card-list-user border-0">
+              <div class="p-name">
+                產品名稱產品名稱
+              </div>
+              <div class="p-sale"><s>NT$15900</s></div>
+              <div class="p-price">NT$15900</div>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="aui-flex-item-6">
+          <div class="aui-card-list">
+            <input class="aui-radio p_list_radio" type="checkbox" />
+            <div class="aui-card-list-content">
+              <a href="#" class="delete_btn deleteBtn">X</a>
+              <img src="image/product/fakeimg.png" />
+              <div class="product_btn_group">
+                <a href="#" class="btn-popup" data-popup="popup-addProdut">編輯商品</a>
+                <a href="#" class="aui-bg-info btn-popup" data-popup="popup-addSale">新增活動</a>
+              </div>
+            </div>
+            <div class="aui-card-list-header aui-card-list-user border-0">
+              <div class="p-name">
+                產品名稱產品名稱
+              </div>
+              <div class="p-sale"><s>NT$15900</s></div>
+              <div class="p-price">NT$15900</div>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="aui-flex-item-6">
+          <div class="aui-card-list">
+            <input class="aui-radio p_list_radio" type="checkbox" />
+            <div class="aui-card-list-content">
+              <a href="#" class="delete_btn deleteBtn">X</a>
+              <img src="image/product/fakeimg.png" />
+              <div class="product_btn_group">
+                <a href="#" class="btn-popup" data-popup="popup-addProdut">編輯商品</a>
+                <a href="#" class="aui-bg-info btn-popup" data-popup="popup-addSale">新增活動</a>
+              </div>
+            </div>
+            <div class="aui-card-list-header aui-card-list-user border-0">
+              <div class="p-name">
+                產品名稱產品名稱
+              </div>
+              <div class="p-sale"><s>NT$15900</s></div>
+              <div class="p-price">NT$15900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部導航 -->
+    <footer class="aui-bar aui-bar-tab">
+      <div class="aui-bar-tab-item footer_home aui-active" tapmode>
+        <a href="#">
+          <ion-icon name="share-social-outline"></ion-icon>
+          <div class="aui-bar-tab-label">分享商店</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_shop" tapmode>
+        <a href="#">
+          <ion-icon name="notifications-outline"></ion-icon>
+          <div class="aui-bar-tab-label">設定通知</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="admin_edit.html">
+          <ion-icon name="settings-outline"></ion-icon>
+          <div class="aui-bar-tab-label">商店設定</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="#">
+          <ion-icon name="document-outline"></ion-icon>
+          <div class="aui-bar-tab-label">操作說明</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="admin_edit_sale.html">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <div class="aui-bar-tab-label">活動列表</div>
+        </a>
+      </div>
+    </footer>
+    <!-- 右選單 -->
+    <div class="right_menu hide">
+      <div class="content">
+        <a href="#" class="right_menu_close toggleRightMenu"><ion-icon name="close-outline"></ion-icon></a>
+        <ul>
+          <li>
+            <a href="edit_bscard.html">編輯電子名片</a>
+          </li>
+          <li>
+            <a href="#">連結名稱</a>
+          </li>
+          <li>
+            <a href="#">連結名稱</a>
+          </li>
+          <li>
+            <a href="#">連結名稱</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ====== popup ===== -->
+
+    <!-- 新增輪播圖 popup -->
+    <div class="popup popup-addSlider">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">新增輪播圖</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  圖片上傳
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="file" placeholder="請上傳輪播圖" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  輪播連結
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="請輸入輪播連結" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  輪播順序
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="number" placeholder="請輸入輪播順序" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="aui-content popup-footer hide-popup">
+        <div class="aui-btn aui-btn-block bg-default">新增</div>
+      </div>
+    </div>
+    <!-- 編輯輪播圖 popup -->
+    <div class="popup popup-editSlider">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">編輯輪播圖</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  圖片上傳
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="file" placeholder="請上傳輪播圖" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  輪播連結
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="請輸入輪播連結" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  輪播順序
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="number" placeholder="請輸入輪播順序" />
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="aui-padded-15">
+            <div class="aui-btn aui-btn-block aui-bg-gray deleteBtn">刪除此輪播</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aui-content popup-footer hide-popup">
+        <div class="aui-btn aui-btn-block bg-default">新增</div>
+      </div>
+    </div>
+
+    <!-- 新增分類 popup -->
+    <div class="popup popup-addCate">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">新增分類</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  分類名稱
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="請輸入分類名稱" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  分類順序
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="number" placeholder="請輸入分類順序" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="aui-content popup-footer hide-popup">
+        <div class="aui-btn aui-btn-block bg-default">新增</div>
+      </div>
+    </div>
+    <!-- 編輯多選 popup -->
+    <div class="popup popup-editMore">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">編輯多選</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-padded-15">
+          <div class="aui-btn aui-btn-block aui-bg-primary aui-margin-b-10 btn-popup hide-popup" data-popup="popup-changeCate">批次變更分類</div>
+          <div class="aui-btn aui-btn-block aui-bg-info aui-margin-b-10">分享所選產品</div>
+          <div class="aui-btn aui-btn-block aui-bg-indigo aui-margin-b-10 btn-popup hide-popup" data-popup="popup-addSale">批次設定活動</div>
+          <div class="aui-btn aui-btn-block aui-bg-gray aui-margin-b-10">刪除所選產品</div>
+        </div>
+      </div>
+    </div>
+    <!-- 變更分類 popup -->
+    <div class="popup popup-changeCate">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">變更分類</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  變更分類
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>分類A</option>
+                    <option>分類B</option>
+                    <option>分類C</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="aui-content popup-footer hide-popup">
+        <div class="aui-btn aui-btn-block bg-default">確認</div>
+      </div>
+    </div>
+    <!-- 編輯分類 popup -->
+    <div class="popup popup-editCate">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">編輯分類</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  分類名稱
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="請輸入分類名稱" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  分類順序
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="number" placeholder="請輸入分類順序" />
+                </div>
+              </div>
+            </li>
+            <div class="aui-padded-15">
+              <div class="aui-btn aui-btn-block aui-btn-sm aui-bg-gray deleteBtn">刪除此分類</div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="aui-content popup-footer hide-popup">
+        <div class="aui-btn aui-btn-block bg-default">新增</div>
+      </div>
+    </div>
+
+    <!-- 編輯商品 popup -->
+    <div class="popup popup-addProdut">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">編輯商品</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  產品代碼
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="請填寫產品代碼" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  商品名稱
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="請填寫商品名稱" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  建議售價
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" value="0" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  優惠價
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" value="0" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  限量
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" value="0" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  排列順序
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="number" value="0" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  商品說明
+                </div>
+                <div class="aui-list-item-input">
+                  <textarea rows="4" placeholder="請填寫商品簡要說明"></textarea>
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  狀態
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>未上架</option>
+                    <option>已上架</option>
+                    <option>刪除</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  新增產品圖
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="file" placeholder="" />
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- 圖片列表 -->
+          <div class="aui-flex-col productListUpload">
+            <div class="aui-flex-item-3">
+              <img src="image/product/fakeimg.png" width="100%" alt="" />
+              <a href="#" class="edit_btn_center">刪除</a>
+            </div>
+            <div class="aui-flex-item-3">
+              <img src="image/product/fakeimg.png" width="100%" alt="" />
+              <a href="#" class="edit_btn_center">刪除</a>
+            </div>
+            <div class="aui-flex-item-3">
+              <img src="image/product/fakeimg.png" width="100%" alt="" />
+              <a href="#" class="edit_btn_center">刪除</a>
+            </div>
+            <div class="aui-flex-item-3">
+              <img src="image/product/fakeimg.png" width="100%" alt="" />
+              <a href="#" class="edit_btn_center">刪除</a>
+            </div>
+            <div class="aui-flex-item-3">
+              <img src="image/product/fakeimg.png" width="100%" alt="" />
+              <a href="#" class="edit_btn_center">刪除</a>
+            </div>
+            <div class="aui-flex-item-3">
+              <img src="image/product/fakeimg.png" width="100%" alt="" />
+              <a href="#" class="edit_btn_center">刪除</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aui-flex-col">
+        <div class="aui-flex-item-6">
+          <div class="aui-btn aui-btn-block bordered-0 hide-popup aui-bg-gray">取消</div>
+        </div>
+        <div class="aui-flex-item-6">
+          <div class="aui-btn aui-btn-block bordered-0 hide-popup bg-default">確認</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新增優惠活動 popup -->
+    <div class="popup popup-addSale">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">新增優惠活動</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動類型
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>滿額折扣</option>
+                    <option>滿件折扣</option>
+                    <option>團購優惠</option>
+                    <option>關鍵字優惠</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動名稱
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="自訂活動名稱" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  折抵%數
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" inputmode="numeric" placeholder="例如 20" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動開始
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="date" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動結束
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="date" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  狀態
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>上架</option>
+                    <option>下架</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="aui-flex-col">
+        <div class="aui-flex-item-12">
+          <div class="aui-btn aui-btn-block bordered-0 aui-bg-primary">新增</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/sweetalert2.all.min.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(document).on('click', '.scroll_item', function(e) {
+        e.preventDefault();
+        $('.scroll_item.active').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+    $(document).ready(function() {
+      // 刪除按鈕
+      $('.deleteBtn').click(function(e) {
+        e.preventDefault();
+        Swal.fire({
+          title: '確認刪除?',
+          showCancelButton: true,
+          confirmButtonText: `確認`,
+          cancelButtonText: `取消`
+        }).then(result => {
+          if (result.value) {
+            Swal.fire({
+              icon: 'success',
+              title: '已刪除',
+              confirmButtonText: `確認`
+            });
+          }
+        });
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="css/admin.css?v10" />
+    <title>商店</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav" id="headerTop">
+      <a href="index.html" class="aui-pull-left aui-btn">
+        <ion-icon class="aui-iconfont" name="home-outline"></ion-icon>
+      </a>
+      <div class="aui-title">優惠活動</div>
+      <!-- 報表查詢按鈕 -->
+      <a href="#" class="aui-pull-right aui-btn">
+        <ion-icon class="aui-iconfont" name="bar-chart-outline"></ion-icon>
+      </a>
+    </header>
+    <div class="aui-content aui-margin-b-15">
+      <!-- 編輯按鈕 -->
+      <div class="aui-flex-col align_items_center stickytop">
+        <div class="aui-flex-item-4 ml-auto">
+          <h3 class="aui-padded-10 aui-text-primary">目前活動</h3>
+        </div>
+        <div class="aui-flex-item-4">
+          <div class="select">
+            <select name="" id="">
+              <option value="">未過期</option>
+              <option value="">已過期</option>
+            </select>
+          </div>
+        </div>
+        <div class="aui-flex-item-4">
+          <a href="#" class="add_btn btn-popup" data-popup="popup-addSale">新增活動</a>
+        </div>
+      </div>
+      <ul class="aui-list aui-media-list cart_info_comfirm aui-bg-white">
+        <div class="recipient_list">
+          <li class="aui-list-item aui-list-item-middle">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text">
+                  <b>滿1000打6折</b>
+                  <div class="flex_shrink_0">
+                    <a href="#" class="aui-btn aui-bg-success aui-text-white btn-popup" data-popup="popup-setSale">指定</a>
+                    <a href="#" class="aui-btn aui-bg-info aui-text-white btn-popup" data-popup="popup-editSale">編輯</a>
+                  </div>
+                </div>
+                <div class="aui-list-item-text">
+                  2021-07-01 ~ 2021-07-31
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="aui-list-item aui-list-item-middle">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text">
+                  <b>輸入關鍵字「防疫優惠」打4折</b>
+                  <div class="flex_shrink_0">
+                    <a href="#" class="aui-btn aui-bg-success aui-text-white btn-popup" data-popup="popup-setSale">指定</a>
+                    <a href="#" class="aui-btn aui-bg-info aui-text-white btn-popup" data-popup="popup-editSale">編輯</a>
+                  </div>
+                </div>
+                <div class="aui-list-item-text">
+                  2021-07-01 ~ 2021-07-31
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="aui-list-item aui-list-item-middle">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text">
+                  <b>每滿1000折90元</b>
+                  <div class="flex_shrink_0">
+                    <a href="#" class="aui-btn aui-bg-success aui-text-white btn-popup" data-popup="popup-setSale">指定</a>
+                    <a href="#" class="aui-btn aui-bg-info aui-text-white btn-popup" data-popup="popup-editSale">編輯</a>
+                  </div>
+                </div>
+                <div class="aui-list-item-text">
+                  2021-07-01 ~ 2021-07-31
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+        
+    </div>
+    <!-- 底部導航 -->
+    <footer class="aui-bar aui-bar-tab">
+      <div class="aui-bar-tab-item footer_home aui-active" tapmode>
+        <a href="#">
+          <ion-icon name="share-social-outline"></ion-icon>
+          <div class="aui-bar-tab-label">分享商店</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_shop" tapmode>
+        <a href="#">
+          <ion-icon name="notifications-outline"></ion-icon>
+          <div class="aui-bar-tab-label">設定通知</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="admin_edit.html">
+          <ion-icon name="settings-outline"></ion-icon>
+          <div class="aui-bar-tab-label">商店設定</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="#">
+          <ion-icon name="document-outline"></ion-icon>
+          <div class="aui-bar-tab-label">操作說明</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="admin_edit_sale.html">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <div class="aui-bar-tab-label">活動列表</div>
+        </a>
+      </div>
+    </footer>
+    <!-- 新增優惠活動 popup -->
+    <div class="popup popup-addSale">
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">新增優惠活動</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動類型
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>滿額折扣</option>
+                    <option>滿件折扣</option>
+                    <option>團購優惠</option>
+                    <option>關鍵字優惠</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動名稱
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="自訂活動名稱" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  折抵%數
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" inputmode="numeric" placeholder="例如 20" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動開始
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="date" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動結束
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="date" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  狀態
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>上架</option>
+                    <option>下架</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="aui-flex-col">
+        <div class="aui-flex-item-12">
+          <div class="aui-btn aui-btn-block bordered-0 aui-bg-primary">新增</div>
+        </div>
+      </div>
+    </div>
+    <!-- 編輯優惠活動 popup -->
+    <div class="popup popup-editSale">
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">編輯優惠活動</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <div class="event_popup aui-content-padded aui-margin-t-0">
+            <div class="aui-flex-col acc aui-margin-b-10">
+              <h3 class="aui-margin-b-0">已選產品</h3>
+              <div class="ml-auto">
+                <a href="#" class="btn_xs btn-popup hide-popup" data-popup="popup-setSale">設定指定產品/分類</a>
+              </div>
+            </div>
+            <div class="product_list_sm scrollX">
+              <div class="product_list_sm_item">
+                <div class="image_round" style="background-image:url(image/product/01.jpg)">
+                  <input type="checkbox" class="aui-switch switch_sm aui-pull-right" checked>
+                </div>
+                <h4>產品A的名稱</h4>
+              </div>
+              <div class="product_list_sm_item">
+                <div class="image_round" style="background-image:url(image/product/02.jpg)">
+                  <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                </div>
+                <h4>產品B的名稱</h4>
+              </div>
+              <div class="product_list_sm_item">
+                <div class="image_round" style="background-image:url(image/product/02.jpg)">
+                  <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                </div>
+                <h4>產品B的名稱</h4>
+              </div>
+              <div class="product_list_sm_item">
+                <div class="image_round" style="background-image:url(image/product/02.jpg)">
+                  <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                </div>
+                <h4>產品B的名稱</h4>
+              </div>
+              <div class="product_list_sm_item">
+                <div class="image_round" style="background-image:url(image/product/02.jpg)">
+                  <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                </div>
+                <h4>產品B的名稱</h4>
+              </div>
+              <div class="product_list_sm_item">
+                <div class="image_round" style="background-image:url(image/product/02.jpg)">
+                  <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                </div>
+                <h4>產品B的名稱</h4>
+              </div>
+              <div class="product_list_sm_item">
+                <div class="image_round" style="background-image:url(image/product/03.jpg)">
+                  <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                </div>
+                <h4>產品名稱</h4>
+              </div>
+            </div>
+            <h3>已選分類</h3>
+            <div class="label_list scrollX aui-padded-t-5">
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right" checked>
+                <h4>分類A</h4>
+              </div>
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right" checked>
+                <h4>分類B</h4>
+              </div>
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                <h4>分類C</h4>
+              </div>
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                <h4>分類C</h4>
+              </div>
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                <h4>分類C</h4>
+              </div>
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                <h4>分類C</h4>
+              </div>
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                <h4>分類C</h4>
+              </div>
+              <div class="label_list_item">
+                <input type="checkbox" class="aui-switch switch_sm aui-pull-right">
+                <h4>分類C</h4>
+              </div>
+            </div>
+          </div>
+          <ul class="aui-list aui-collapse aui-border aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動類型
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>滿額折扣</option>
+                    <option>滿件折扣</option>
+                    <option>團購優惠</option>
+                    <option>關鍵字優惠</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動名稱
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" placeholder="自訂活動名稱" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  折抵%數
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="text" inputmode="numeric" placeholder="例如 20" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動開始
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="date" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  活動結束
+                </div>
+                <div class="aui-list-item-input">
+                  <input type="date" />
+                </div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                  狀態
+                </div>
+                <div class="aui-list-item-input">
+                  <select>
+                    <option>上架</option>
+                    <option>下架</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="aui-content-padded">
+            <div class="aui-btn">刪除此活動</div>
+          </div>
+        </div>
+      </div>
+      <div class="aui-flex-col">
+        <div class="aui-flex-item-12">
+          <div class="aui-btn aui-btn-block bordered-0 aui-bg-primary">新增</div>
+        </div>
+      </div>
+    </div>
+    <!-- 指定活動 popup -->
+    <div class="popup popup-setSale">
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">指定活動</div>
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <!-- content -->
+      <div class="popup-content">
+        <div class="aui-content">
+          <div class="aui-tab" id="tab">
+            <div class="aui-tab-item aui-active">產品</div>
+            <div class="aui-tab-item">分類</div>
+          </div>
+          <div class="aui-content-padded">
+            <section class="event_popup" id="tab_box">
+              <!-- 產品 -->
+              <div class="aui-card-list">
+                <h3>已選產品</h3>
+                <div class="product_list_sm">
+                  <div class="product_list_sm_item">
+                    <div class="image_round" style="background-image:url(image/product/01.jpg)">
+                      <div class="icon_delete">X</div>
+                    </div>
+                    <h4>產品A的名稱</h4>
+                  </div>
+                  <div class="product_list_sm_item">
+                    <div class="image_round" style="background-image:url(image/product/02.jpg)">
+                      <div class="icon_delete">X</div>
+                    </div>
+                    <h4>產品B的名稱</h4>
+                  </div>
+                  <div class="product_list_sm_item">
+                    <div class="image_round" style="background-image:url(image/product/03.jpg)">
+                      <div class="icon_delete">X</div>
+                    </div>
+                    <h4>產品名稱</h4>
+                  </div>
+                </div>
+                <h3 class="aui-margin-t-10 aui-padded-t-15 aui-border-t">新增產品</h3>
+                <div class="search">
+                  <input type="text" placeholder="利用名稱搜尋" />
+                </div>
+                <ul class="list_image_radio">
+                  <li>
+                    <label>
+                      <div class="image_round" style="background-image:url(image/product/04.jpg)"></div>
+                      <p>產品A的名稱</p>
+                      <input class="aui-radio" type="checkbox" checked="" />
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <div class="image_round" style="background-image:url(image/product/05.jpg)"></div>
+                      <p>產品B的名稱</p>
+                      <input class="aui-radio" type="checkbox" />
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <div class="image_round" style="background-image:url(image/product/06.jpg)"></div>
+                      <p>產品C的名稱</p>
+                      <input class="aui-radio" type="checkbox" />
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <div class="image_round" style="background-image:url(image/product/07.jpg)"></div>
+                      <p>產品D的名稱</p>
+                      <input class="aui-radio" type="checkbox" />
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- 分類 -->
+              <div class="aui-card-list point_list">
+                <h3>已選分類</h3>
+                <div class="label_list">
+                  <div class="label_list_item">
+                    <div class="icon_delete">X</div>
+                    <h4>分類A</h4>
+                  </div>
+                  <div class="label_list_item">
+                    <div class="icon_delete">X</div>
+                    <h4>分類B</h4>
+                  </div>
+                  <div class="label_list_item">
+                    <div class="icon_delete">X</div>
+                    <h4>分類C</h4>
+                  </div>
+                </div>
+                <h3 class="aui-margin-t-10 aui-padded-t-15 aui-border-t">新增分類</h3>
+                <div class="search">
+                  <input type="text" placeholder="利用名稱搜尋" />
+                </div>
+                <ul class="list_image_radio">
+                  <li>
+                    <label>
+                      <p>分類的名稱</p>
+                      <input class="aui-radio" type="checkbox" checked="" />
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <p>分類的名稱</p>
+                      <input class="aui-radio" type="checkbox" />
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <p>分類的名稱</p>
+                      <input class="aui-radio" type="checkbox" />
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <p>分類的名稱</p>
+                      <input class="aui-radio" type="checkbox" />
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="aui-flex-col">
+        <div class="aui-flex-item-12">
+          <div class="aui-btn aui-btn-block bordered-0 aui-bg-primary">確認</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/sweetalert2.all.min.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // 刪除按鈕
+      $('.deleteBtn').click(function(e) {
+        e.preventDefault();
+        Swal.fire({
+          title: '確認刪除?',
+          showCancelButton: true,
+          confirmButtonText: `確認`,
+          cancelButtonText: `取消`
+        }).then(result => {
+          if (result.value) {
+            Swal.fire({
+              icon: 'success',
+              title: '已刪除',
+              confirmButtonText: `確認`
+            });
+          }
+        });
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $('#tab_box .aui-card-list').css('display', 'none');
+      $('#tab_box .aui-card-list')
+        .eq(0)
+        .css('display', 'block');
+      $('#tab .aui-tab-item').click(function() {
+        var index = $('#tab .aui-tab-item').index($(this));
+        $('#tab .aui-tab-item').attr('class', 'aui-tab-item');
+        $(this).attr('class', 'aui-tab-item aui-active');
+
+        $('#tab_box .aui-card-list').css('display', 'none');
+        $('#tab_box .aui-card-list')
+          .eq(index)
+          .css('display', 'block');
+      });
+    });
+  </script>
+</html>

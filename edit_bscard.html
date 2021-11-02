@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <title>商店</title>
+  </head>
+  <body>
+    <header class="aui-bar aui-bar-nav aui-bar-light" id="headerTop">
+      <a href="admin_edit.html" class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-left"></span>
+      </a>
+      <div class="aui-title">編輯電子名片</div>
+    </header>
+    <div class="aui-content aui-margin-b-15">
+      <!-- 編輯廣告 -->
+      <ul class="aui-list aui-collapse aui-border aui-bg-white">
+        <li class="aui-list-header">
+          廣告連結設定
+        </li>
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-label">
+              連結類型
+            </div>
+            <div class="aui-list-item-input">
+              <select class="adSelect" data-link="link01">
+                <option value="customer">自訂</option>
+                <option value="static">固定</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <div class="link01">
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                按鍵名稱
+              </div>
+              <div class="aui-list-item-input">
+                <input type="text" placeholder="請輸入" />
+              </div>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                按鍵連結
+              </div>
+              <div class="aui-list-item-input">
+                <input type="text" placeholder="請輸入" />
+              </div>
+            </div>
+          </li>
+        </div>
+        <li class="aui-list-item">
+          <div class="aui-list-item-label">
+            廣告類型設定
+          </div>
+          <div class="aui-list-item-inner" style="justify-content:flex-start; flex-wrap:wrap;">
+            <label> <input class="aui-checkbox" type="checkbox" value="餐飲" name="type" /> 餐飲</label>
+            <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="零售" name="type" /> 零售</label>
+            <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="3C" name="type" /> 3C</label>
+            <label> <input class="aui-checkbox aui-margin-l-15" type="checkbox" value="文化" name="type" />文化</label>
+          </div>
+        </li>
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-label">
+              廣告狀態
+            </div>
+            <div class="aui-list-item-input">
+              <select>
+                <option>已上架</option>
+                <option>下架</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- 編輯個人 -->
+      <ul class="aui-list aui-bg-white">
+        <li class="aui-list-header">
+          個人介紹
+        </li>
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-input">
+              <textarea name="" id="" cols="30" rows="15" placeholder="請輸入個人簡介"></textarea>
+            </div>
+          </div>
+        </li>
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-label">
+              名片狀態
+            </div>
+            <div class="aui-list-item-input">
+              <select>
+                <option>已上架</option>
+                <option>下架</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-label">
+              新增名片圖
+            </div>
+            <div class="aui-list-item-input">
+              <input type="file" placeholder="" />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <img src="image/product/fakeimg.png" width="100%" alt="" />
+    </div>
+    <footer class="aui-bar aui-bar-tab">
+      <div href="#" class="aui-bar-tab-item aui-bg-primary aui-text-white" tapmode="">確認</div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script>
+    $(document).ready(function() {
+      // 自選廣告
+      $('.adSelect').change(function(e) {
+        e.preventDefault();
+        let linkBox = $(this).attr('data-link');
+        if ($(this).val() == 'customer') {
+          $('.' + linkBox).show();
+        } else {
+          $('.' + linkBox).hide();
+        }
+      });
+    });
+  </script>
+</html>

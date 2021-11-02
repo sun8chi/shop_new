@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <title>商店</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav" id="headerTop">
+      <a href="index.html" class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-home"></span>
+      </a>
+      <!-- 搜尋欄 cate-search -->
+      <div class="aui-title cate-search" style="left:2rem; right: 2rem;">
+        <div class="aui-searchbar" id="search">
+          <div class="aui-searchbar-input aui-border-radius">
+            <i class="aui-iconfont aui-icon-search"></i>
+            <input type="search" placeholder="請輸入關鍵字" id="search-input" />
+            <div class="aui-searchbar-clear-btn">
+              <i class="aui-iconfont aui-icon-close"></i>
+            </div>
+          </div>
+          <div class="aui-searchbar-btn" tapmode>取消</div>
+        </div>
+      </div>
+      <!-- 更多功能按鈕 -->
+      <a href="#" class="aui-pull-right aui-btn toggleRightMenu">
+        <ion-icon class="aui-iconfont" name="menu-outline"></ion-icon>
+      </a>
+    </header>
+    <!-- 首頁上方輪播圖 home-slider-->
+    <section>
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="detail.html"><img src="image/home-slider/01.png" alt=""/></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="detail.html"><img src="image/home-slider/02.png" alt=""/></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="detail.html"><img src="image/home-slider/03.png" alt=""/></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="detail.html"><img src="image/home-slider/04.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="swiper-pagination pagHome"></div>
+      </div>
+    </section>
+    <!-- 最新消息跑馬燈 -->
+    <div class="news_slider">
+      <h4>最新快訊｜</h4>
+      <div class="swiper-container newsSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>最新消息01</p>
+          </div>
+          <div class="swiper-slide">
+            <p>最新消息02</p>
+          </div>
+          <div class="swiper-slide">
+            <p>最新消息03</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 分類 -->
+    <!-- <div id="topNav" class="swiper-container aui-tab">
+      <div class="swiper-wrapper" id="cateSwiper">
+        <div class="swiper-slide aui-tab-item aui-active active" id="cate01"><span>女嬰用品</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate02"><span>家電</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate03"><span>經典限量球鞋</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate04"><span>美妝保養</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate05"><span>聖誕好禮</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate06"><span>3C周邊</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate07"><span>家電用品</span></div>
+      </div>
+    </div> -->
+    
+    <!-- 分類 -->
+    <div class="scroll_bar stickytop">
+        <div class="scroll_item active"><span>所有分類</span></div>
+        <div class="scroll_item" id="cate01"><span>女嬰用品</span></div>
+        <div class="scroll_item" id="cate02"><span>家電</span></div>
+        <div class="scroll_item" id="cate03"><span>經典限量球鞋</span></div>
+        <div class="scroll_item" id="cate04"><span>美妝保養</span></div>
+        <div class="scroll_item" id="cate05"><span>聖誕好禮</span></div>
+        <div class="scroll_item" id="cate06"><span>3C周邊</span></div>
+        <div class="scroll_item" id="cate07"><span>家電用品</span></div>
+      </div>
+    <!-- 多規格商品 -->
+    <section class="card-product aui-content aui-margin-b-15">
+      <div class="aui-flex-col" id="productList">
+        <!-- <div class="aui-flex-item-6">
+          <div class="aui-card-list btn-popup" data-popup="popup-addcart">
+            <div class="aui-card-list-content">
+              <img src="image/product/01.jpg" />
+            </div>
+            <div class="aui-card-list-header aui-card-list-user border-0">
+              <div class="p-name">
+                好好吃的好吃餅乾
+              </div>
+              <div class="p-sale"><s>NT$15900</s></div>
+              <div class="p-price">NT$15900</div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- 加入購物車popup -->
+    <div class="popup popup-addcart">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <!-- 分享鈕 -->
+        <a href="#" class="aui-pull-left aui-btn">
+          <span class="aui-iconfont aui-icon-share aui-text-gray"></span>
+        </a>
+        <div class="aui-title">產品介紹</div>
+        <!-- 關閉鈕 -->
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+        <!-- 如果要有其他按鈕 -->
+        <a href="#" class="aui-pull-right aui-btn toggleRightMenu">
+          ?
+        </a>
+      </header>
+      <div class="popup-content">
+        <!-- 商品輪播圖 -->
+        <section class="aui-padded-b-0">
+          <div class="swiper-container productSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="image/product/01.jpg" alt="" /></div>
+            </div>
+            <div class="swiper-pagination pagProduct"></div>
+          </div>
+        </section>
+        <!-- 產品名稱/價格 -->
+        <section class="aui-bg-white aui-padded-t-10 aui-margin-b-0 p_info">
+          <div class="aui-content-padded aui-margin-t-0 aui-margin-b-0">
+            <div class="aui-title aui-ellipsis-2 aui-font-size-20"><b class="pName">產品名稱</b></div>
+            <div class="aui-margin-t-10 d_flex">
+              <p class="aui-margin-r-15">
+                原價 <s>NT$<span class="aui-font-size-18 pPrice">390</span></s>
+              </p>
+              <p class="color-orange">優惠價 NT$<span class="aui-font-size-20 pSale">290</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="p_detail aui-bg-white">
+          <ul class="aui-list aui-list-in aui-bg-white">
+            <li class="aui-list-header">
+              選擇數量與規格
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">數量</div>
+                <div class="aui-list-item-right">
+                  <div class="counter">
+                    <span class="dis"> - </span>
+                    <span class="num">1</span>
+                    <span class="add">+</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div class="optionList">
+              <!-- <li class="aui-list-item">
+                <div class="aui-list-item-inner">
+                  <div class="aui-list-item-title">規格</div>
+                  <div class="aui-list-item-right select-type">
+                    <span class="aui-label active aui-label-outlined">11吋</span>
+                    <span class="aui-label aui-label-outlined">13吋</span>
+                    <span class="aui-label aui-label-outlined">15吋</span>
+                  </div>
+                </div>
+              </li> -->
+            </div>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">小計</div>
+                <div class="aui-list-item-right aui-font-size-16 aui-text-danger">NT$<span class="pTotal">0</span></div>
+              </div>
+            </li>
+          </ul>
+          <div class="aui-tab-content p_intro aui-bg-white aui-content-padded">
+            <h3>商品介紹</h3>
+            <p class="Pdetail">
+              這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷這是一個很好吃的餅乾唷
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- 加入購物車 -->
+      <div class="aui-content popup-footer d_flex">
+        <div class="aui-btn aui-btn-block bg-danger bordered-0 w-50">
+          <p class="color-white">優惠價 NT$<span class="aui-font-size-20 pPrice">290</span></p>
+        </div>
+        <div class="aui-btn aui-btn-block bg-default bordered-0 w-50">加入購物車</div>
+      </div>
+    </div>
+    <!-- 底部導航 -->
+    <footer class="aui-bar aui-bar-tab">
+      <div class="aui-bar-tab-item footer_home aui-active" tapmode>
+        <a href="index.html">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dianpu"></use>
+          </svg>
+          <div class="aui-bar-tab-label">首頁</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_shop" tapmode>
+        <a href="cate.html">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-goumai"></use>
+          </svg>
+          <div class="aui-bar-tab-label">分類</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="order.html">
+          <div class="aui-badge">5</div>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dingdan"></use>
+          </svg>
+          <div class="aui-bar-tab-label">訂單</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="cart_list.html">
+          <div class="aui-badge">5</div>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-gouwu"></use>
+          </svg>
+          <div class="aui-bar-tab-label">購物車</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_member d_none" tapmode>
+        <a href="member.html">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-wode"></use>
+          </svg>
+          <div class="aui-bar-tab-label">會員專區</div>
+        </a>
+      </div>
+    </footer>
+    <!-- 右選單 -->
+    <div class="right_menu hide">
+      <div class="content">
+        <a href="#" class="right_menu_close toggleRightMenu"><ion-icon name="close-outline"></ion-icon></a>
+        <ul>
+          <li>
+            <a href="store.html">店家介紹</a>
+          </li>
+          <li>
+            <a href="#">連結名稱</a>
+          </li>
+          <li>
+            <a href="#">連結名稱</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script type="text/javascript">
+    // ============ 產品資料 data（應為動態讀取） ============
+    var data = [
+      {
+        name: '奶嘴',
+        price: 300,
+        sale_price: 200,
+        imgSrc: ['image/product/01.jpg']
+      },
+      {
+        name: '嬰兒尿布X嬰兒尿布X嬰兒尿布X嬰兒尿布X',
+        price: 400,
+        sale_price: 300,
+        imgSrc: ['image/product/02.jpg']
+      }
+    ];
+  </script>
+  <!-- 產品分類切換 -->
+  <script type="text/javascript">
+    showProduct();
+    $(document).ready(function() {
+      $('.scroll_item').on('click', function(e) {
+        $('.scroll_bar .active').removeClass('active');
+        $(this).addClass('active');
+        // 點選分類，取得目前分類 ID
+        let nowCateId = $(this).attr('id');
+        // console.log(nowCateId);
+        // =========== 切換範例，資料切換應為後端動態載入
+        if (nowCateId == 'cate01') {
+          data = [
+            {
+              name: '奶嘴2',
+              price: 300,
+              sale_price: 200,
+              imgSrc: ['image/product/01.jpg']
+            },
+            {
+              name: '嬰兒尿布22X',
+              price: 400,
+              sale_price: 300,
+              imgSrc: ['image/product/02.jpg']
+            }
+          ];
+          showProduct();
+        } else if (nowCateId == 'cate02') {
+          data = [
+            {
+              name: '微波爐',
+              price: 5000,
+              sale_price: 9000,
+              imgSrc: ['image/product/03.jpg']
+            }
+          ];
+          showProduct();
+        } else if (nowCateId == 'cate03') {
+          data = [
+            {
+              name: 'Nick ABD400',
+              price: 2400,
+              sale_price: 3680,
+              imgSrc: ['image/product/04.jpg']
+            }
+          ];
+          showProduct();
+        }
+      });
+    });
+
+    // 顯示分類產品
+    function showProduct() {
+      let str = '';
+      data.forEach((item, i) => {
+        str += `<div class="aui-flex-item-6">
+          <div class="aui-card-list btn-popup" data-popup="popup-addcart">
+            <div class="aui-card-list-content">
+              <img src="${item.imgSrc[0]}" />
+            </div>
+            <div class="aui-card-list-header aui-card-list-user border-0">
+              <div class="p-name">
+                ${item.name}
+              </div>
+              <div class="p-sale"><s>NT$${item.price}</s></div>
+              <div class="p-price">NT$${item.sale_price}</div>
+            </div>
+          </div>
+        </div>`;
+      });
+      $('#productList').html(str);
+    }
+    var productSlider = new Swiper('.productSlider', {
+      loop: false,
+      observer: true,
+      pagination: '.pagProduct',
+      paginationClickable: true
+    });
+    // ========= 產品資訊 JSON =========
+    var productDetail = {
+      name: '煥白美顏精華液',
+      price: 400,
+      sale_price: 300,
+      imgSrc: ['image/product/02.jpg', 'image/product/02.jpg', 'image/product/03.jpg', 'image/product/04.jpg', 'image/product/05.jpg'],
+      info: '產品介紹的內容產品介紹的內容產品介紹的內容',
+      option: [
+        {
+          optName: '尺寸',
+          optSelect: ['大1000ml', '中500ml', '小350ml']
+        },
+        {
+          optName: '顏色',
+          optSelect: ['黃色', '綠色']
+        }
+      ]
+    };
+    // 顯示產品資訊
+    $(document).on('click', '.btn-popup', function() {
+      var N = $(this).attr('data-popup');
+      $('.' + N).slideToggle();
+      $('body').append('<div class="popup-cover"></div>');
+      $('body').addClass('overflow-hidden');
+
+      // ========= 在這動態修改 productDetail JSON，以下塞資料 =========
+
+      // 輪播圖
+      let imgSwiper = '';
+      let swiperItems = productDetail.imgSrc.forEach(function(item) {
+        imgSwiper += `<div class="swiper-slide"><img src="${item}" alt="" /></div>`;
+      });
+      $('.popup-addcart .productSlider .swiper-wrapper').html(imgSwiper);
+      productSlider.update();
+      // 規格
+      let optionStr = '';
+      let options = productDetail.option.forEach(function(item, i) {
+        optionStr += `
+              <li class="aui-list-item">
+                <div class="aui-list-item-inner">
+                  <div class="aui-list-item-title">${item.optName}</div>
+                  <div class="aui-list-item-right select-type">
+                    ${item.optSelect
+                      .map(function(optItem) {
+                        return `<span class="aui-label aui-label-outlined">${optItem}</span>`;
+                      })
+                      .join('')}
+                  </div>
+                </div>
+              </li>`;
+      });
+      $('.popup-addcart .optionList').html(optionStr);
+      // 其他資訊
+      $('.popup-addcart .pName').html(productDetail.name);
+      $('.popup-addcart .pPrice').html(productDetail.price);
+      $('.popup-addcart .pSale').html(productDetail.sale_price);
+      $('.popup-addcart .pTotal').html(productDetail.sale_price);
+      $('.popup-addcart .Pdetail').html(productDetail.info);
+      // 小計計算
+      $('.counter').click(function(e) {
+        e.preventDefault();
+        $('.popup-addcart .pTotal').html(productDetail.price * $('.counter .num').text());
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/aui.css" />
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v10" />
+    <title>確認訂單</title>
+</head>
+
+<body>
+    <header class="aui-bar aui-bar-nav aui-text-left header" id="headerTop">
+        <a href="javascript:history.back()" class="aui-pull-left aui-btn">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">確認訂單</div>
+    </header>
+    <section>
+        <!-- 訂單明細 -->
+        <div class="aui-card-list p_info">
+            <div class="aui-card-list-content">
+                <ul class="aui-list aui-media-list">
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media">
+                                <img src="image/product/01.jpeg">
+                            </div>
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <div class="aui-list-item-title aui-font-size-16 aui-ellipsis-2">咖啡豆研磨機</div>
+                                </div>
+                                <div class="aui-list-item-text aui-text-danger aui-bold aui-font-size-16 aui-margin-t-10">
+                                    NT$680元
+                                    <div class="aui-list-item-right">
+                                        現正優惠<span class="aui-text-danger"> 4.2折</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 訂單明細 -->
+        <div class="aui-content aui-margin-b-15">
+            <ul class="aui-list aui-list-in aui-bg-white">
+                <li class="aui-list-item aui-list-header">
+                    <div class="aui-list-item-inner">
+                        訂單明細
+                    </div>
+                </li>
+            </ul>
+            <ul class="aui-list aui-media-list cart_list_comfirm aui-bg-white">
+                <div class="p_list">
+                    <div class="p_type">
+                        <li class="aui-list-item">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text">
+                                        <div class="aui-list-item-title">13吋 銀色 </div>
+                                        <div class="aui-list-item-right">x1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="aui-list-item">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text">
+                                        <div class="aui-list-item-title">15吋 太空灰色 </div>
+                                        <div class="aui-list-item-right">x2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="p_total">
+                        <li class="aui-list-item aui-list-item-middle">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text p_count">
+                                        <span>共<span class="aui-text-danger aui-bold"> <span id="show_total">3</span> </span>件商品金額</span>
+                                        <span>NT$ 6000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="aui-list-item aui-list-item-middle">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text">
+                                        <span>運費</span>
+                                        <span class="freight">NT$ 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="aui-list-item aui-list-item-middle">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text">
+                                        <span>總計</span>
+                                        <span>NT$<span class="aui-text-danger aui-bold p_price_total"> 6000</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <!-- 收貨人資訊 -->
+        <div class="aui-content aui-margin-b-15">
+            <ul class="aui-list aui-media-list cart_info_comfirm aui-bg-white">
+                <li class="aui-list-header">
+                    收貨人資訊
+                </li>
+                <div class="recipient_list">
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <span>姓名</span>
+                                    <span>莎小夏（男）</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <span>Email</span>
+                                    <span>tyshiah@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <span>手機</span>
+                                    <span>0910222555</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <span>市話</span>
+                                    <span>02-87732320</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <span>送貨地址</span>
+                                    <span>104台北市中山區復興南路一段30號87732320</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <span>賣方備註</span>
+                                    <span>易碎物品！請注意</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- 付款資訊 -->
+        <div class="aui-content aui-margin-b-15">
+            <ul class="aui-list aui-media-list cart_pay aui-bg-white">
+                <li class="aui-list-header">
+                    付款資訊
+                </li>
+                <div class="pay_list">
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text">
+                                    <span class="aui-text-danger">信用卡付款</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <footer class="aui-bar aui-bar-tab">
+        <a href="order_success.html" class="aui-bar-tab-item aui-bg-warning aui-text-white" tapmode>信用卡付款</a >
+    </footer>
+    
+</body>
+<script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script> <script type="text/javascript" src="./script/iconfont.js"></script>
+<script type="text/javascript" src="./script/jquery.countdown.js"></script>
+
+</html>

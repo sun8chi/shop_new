@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/aui.css" />
+    <link rel="stylesheet" href="css/jquery.countdown.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v10" />
+    <title>結帳</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav aui-bar-light" id="headerTop">
+      <a href="#" class="aui-pull-left aui-btn backBtn">
+        <span class="aui-iconfont aui-icon-left"></span>
+      </a>
+      <div class="aui-title">結帳</div>
+    </header>
+    <section>
+      <div class="aui-padded-b-0">
+        <div class="swiper-container home-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/product/07.jpg" alt="" /></div>
+            <div class="swiper-slide swiper_slide_center">
+              <div class="video_iframe">
+                  <iframe src="https://www.youtube.com/embed/-X2V9DBva-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="swiper-slide"><img src="image/product/02.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="image/product/03.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-pagination pagHome"></div>
+        </div>
+      </div>
+      <div class="aui-card-list">
+        <div class="aui-card-list-content">
+          <ul class="aui-list aui-media-list">
+            <li class="aui-list-header">
+              確認訂單
+            </li>
+            <div class="cart-list">
+              <li class="aui-list-item aui-list-item-middle">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/01.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text aui-margin-b-5">
+                      <div class="aui-list-item-title aui-font-size-16 aui-ellipsis-2">日本超省水化妝棉</div>
+                    </div>
+                    <div class="aui-list-item-text aui-margin-b-10">
+                      <span class="aui-text-primary">NT$500 <small class="aui-text-gray">(原價NT$400)</small></span>
+                    </div>
+                    <div class="d_flex just_content_between">
+                      <div class="counter">
+                        <span class="dis"> - </span>
+                        <span class="num">1</span>
+                        <span class="add">+</span>
+                      </div>
+                      <span class="aui-text-danger aui-font-size-18"> NT$1500</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="aui-list-item aui-list-item-middle">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/02.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text aui-margin-b-5">
+                      <div class="aui-list-item-title aui-font-size-16 aui-ellipsis-2">草本煥膚保濕精華</div>
+                    </div>
+                    <div class="aui-list-item-text aui-margin-b-10">
+                      <span class="aui-text-primary">NT$500 <small class="aui-text-gray">(原價NT$400)</small></span>
+                    </div>
+                    <div class="d_flex just_content_between">
+                      <div class="counter">
+                        <span class="dis"> - </span>
+                        <span class="num">1</span>
+                        <span class="add">+</span>
+                      </div>
+                      <span class="aui-text-danger aui-font-size-18"> NT$1500</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="aui-list-item aui-list-item-middle">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/03.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text aui-margin-b-5">
+                      <div class="aui-list-item-title aui-font-size-16 aui-ellipsis-2">文藝青年後揹包</div>
+                    </div>
+                    <div class="aui-list-item-text aui-margin-b-10">
+                      <span class="aui-text-primary">NT$500 <small class="aui-text-gray">(原價NT$400)</small></span>
+                    </div>
+                    <div class="d_flex just_content_between">
+                      <div class="counter">
+                        <span class="dis"> - </span>
+                        <span class="num">1</span>
+                        <span class="add">+</span>
+                      </div>
+                      <span class="aui-text-danger aui-font-size-18"> NT$1500</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+          <ul class="aui-list aui-list-in aui-bg-white">
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">收取金額</div>
+                <div class="aui-list-item-right">$4500元</div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">運費</div>
+                <div class="aui-list-item-right">$20元</div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-title aui-text-primary">筆電第二件半價</div>
+                <div class="aui-list-item-right aui-text-primary">$150元</div>
+              </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">總計</div>
+                <div class="aui-list-item-right"><span class="aui-text-danger">$4670元</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 訂購人 -->
+      <div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-collapse aui-border aui-bg-white">
+          <div class="aui-collapse-item">
+            <!-- 訂購人內容 -->
+            <li class="aui-list-item aui-collapse-header aui-list-header" tapmode="">
+              <div class="aui-list-item-inner">
+                訂購人
+                <div class="aui-list-item-right">
+                  <i class="aui-iconfont aui-icon-down aui-collapse-arrow"></i>
+                </div>
+              </div>
+            </li>
+            <div class="aui-collapse-content">
+              <!-- <li class="aui-list-item">
+                <div class="aui-list-item-inner">
+                  <div class="aui-btn aui-btn-primary btn-popup ml_auto" data-popup="select_man">選擇常用收件人</div>
+                </div>
+              </li> -->
+              <!-- 訂購人區塊 -->
+              <div class="item_rec">
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                      姓名
+                    </div>
+                    <div class="aui-list-item-input">
+                      <input type="text" placeholder="姓名" />
+                    </div>
+                  </div>
+                </li>
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                      手機
+                    </div>
+                    <div class="aui-list-item-input">
+                      <input type="number" inputmode="numeric" placeholder="手機" />
+                    </div>
+                  </div>
+                </li>
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                      Email
+                    </div>
+                    <div class="aui-list-item-input">
+                      <input type="email" placeholder="Email" />
+                    </div>
+                  </div>
+                </li>
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                      LINE帳號
+                    </div>
+                    <div class="aui-list-item-input">
+                      <input type="text" placeholder="LINE帳號" />
+                    </div>
+                  </div>
+                </li>
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                      收貨地址
+                    </div>
+                    <div class="aui-list-item-input">
+                      <select>
+                        <option>請選擇</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-input">
+                      <input type="text" placeholder="請輸入完整地址" />
+                    </div>
+                  </div>
+                </li>
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                      賣方備註
+                    </div>
+                    <div class="aui-list-item-input">
+                      <input type="text" placeholder="" />
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <!-- <div class="aui-content-padded">
+                <div class="aui-btn aui-btn-primary aui-btn-block aui-btn-sm">新增收件人</div>
+              </div> -->
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!-- 取貨方式 -->
+      <div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-list-in aui-bg-white">
+          <li class="aui-list-header">
+            取貨方式
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <label> <input class="aui-radio" type="radio" value="宅配" name="get_bag" checked="" /> 宅配</label>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <label> <input class="aui-radio" type="radio" value="現場" name="get_bag" /> 現場取貨</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 付費方式 -->
+      <div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-list-in aui-bg-white">
+          <li class="aui-list-header">
+            付費方式
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <label> <input class="aui-radio" type="radio" name="pay_type" checked="" /> 貨到付款</label>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <label> <input class="aui-radio" type="radio" name="pay_type" /> 銀行轉帳</label>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <label> <input class="aui-radio" type="radio" name="pay_type" /> 點數付款 </label>
+              <div class="aui-list-item-text">
+                您的點數餘額：NT$8800
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 選擇常用收件人popup -->
+    <div class="popup select_man">
+      <header class="aui-bar aui-bar-nav aui-text-left header aui-bg-default aui-text-gray" id="header">
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+        <div class="aui-title">選擇常用收件人</div>
+      </header>
+      <div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-list-in aui-bg-white">
+          <li class="aui-list-item aui-list-item-middle">
+            <div class="aui-list-item-inner aui-list-item-arrow">
+              <div class="aui-list-item-title">林大美</div>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner aui-list-item-arrow">
+              <div class="aui-list-item-title">林美麗</div>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner aui-list-item-arrow">
+              <div class="aui-list-item-title">黃阿華</div>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner aui-list-item-arrow">
+              <div class="aui-list-item-title">許小山</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="aui-bar aui-bar-tab d_flex">
+      <div class="aui-btn aui-btn-block aui-bg-default bordered-0 w-50">
+        <p class="color-default">優惠價 NT$<span class="aui-font-size-20">290</span></p>
+      </div>
+      <a href="cart_confirm.html" class="aui-btn aui-btn-block bg-default bordered-0 w-50" id="nextBtn">下一步</a>
+    </footer>
+    <script type="text/javascript" src="script/aui-collapse.js"></script>
+    <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./script/iconfont.js"></script>
+    <script type="text/javascript" src="./script/swiper.min.js"></script>
+    <script type="text/javascript" src="./script/script.js?v10"></script>
+
+    <script type="text/javascript">
+      apiready = function() {
+        api.parseTapmode();
+      };
+      var collapse = new auiCollapse({
+        autoHide: false
+      });
+      // $(document).ready(function () {
+      //   $('#nextBtn').click(function (e) {
+      //     e.preventDefault();
+      //     let test = $('input[name=get_bag]:checked').val()
+      //     console.log(test)
+      //   });
+      // });
+    </script>
+  </body>
+</html>

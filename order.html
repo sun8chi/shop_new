@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/aui.css" />
+    <link rel="stylesheet" href="css/jquery.countdown.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v10" />
+    <title>我的訂單</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav aui-bar-light" id="headerTop">
+      <a href="javascript:history.back()" class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-left"></span>
+      </a>
+      <div class="aui-title">我的訂單</div>
+    </header>
+    <section class="aui-content aui-grid aui-border-b pb_0">
+      <div class="aui-row">
+        <div class="aui-col-xs-4 aui-border-r">
+          <div class="aui-gird-lable aui-font-size-12">營業額</div>
+          <big class="aui-text-primary">340,000</big>
+        </div>
+        <div class="aui-col-xs-4 aui-border-r">
+          <div class="aui-gird-lable aui-font-size-12">訂單量</div>
+          <big class="aui-text-warning">1,323</big>
+        </div>
+        <div class="aui-col-xs-4">
+          <div class="aui-gird-lable aui-font-size-12">商品銷售量</div>
+          <big class="aui-text-success">4,539</big>
+        </div>
+      </div>
+    </section>
+    <a href="#" class="filter_btn btn-popup" data-popup="popup-filter">訂單篩選</a>
+    <div class="aui-tab stickytop" id="tab">
+      <div class="aui-tab-item aui-active">未出貨</div>
+      <div class="aui-tab-item">
+        <div></div>
+        已出貨
+      </div>
+      <div class="aui-tab-item">已完成</div>
+    </div>
+    <section id="tab_box">
+      <!-- 未出貨 -->
+      <div class="aui-card-list order_list">
+        <div class="aui-card-list-content">
+          <ul class="aui-list aui-media-list aui-margin-b-15">
+            <li class="aui-list-item">
+              <a href="order_info.html">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/01.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text">
+                      <div class="aui-list-item-title">訂單編號：1093894</div>
+                      <div class="aui-list-item-right"><span class="aui-iconfont aui-icon-right"></span></div>
+                    </div>
+                    <div class="aui-list-item-text">
+                      發票號碼：123123123
+                    </div>
+                    <div class="aui-list-item-text aui-text-primary">
+                        已出貨
+                    </div>
+                  </div>
+                </div>
+                <div class="aui-info" style="padding-top:0">
+                  <div class="aui-info-item">2017-07-14 10:31</div>
+                  <div class="aui-info-item">
+                    <span class="aui-text-danger aui-bold aui-font-size-16">NT$25000</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="aui-list-item">
+              <a href="order_info.html">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/02.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text">
+                      <div class="aui-list-item-title">訂單編號：1093894</div>
+                      <div class="aui-list-item-right"><span class="aui-iconfont aui-icon-right"></span></div>
+                    </div>
+                    <div class="aui-list-item-text">
+                      發票號碼：123123123
+                    </div>
+                    <div class="aui-list-item-text aui-text-primary">
+                        未出貨
+                    </div>
+                  </div>
+                </div>
+                <div class="aui-info" style="padding-top:0">
+                  <div class="aui-info-item">2017-07-14 10:31</div>
+                  <div class="aui-info-item">
+                    <span class="aui-text-danger aui-bold aui-font-size-16">NT$25000</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 已出貨 -->
+      <div class="aui-card-list">
+        <div class="aui-card-list-content">
+          <ul class="aui-list aui-media-list">
+            <li class="aui-list-item">
+              <a href="order_info.html">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/03.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text">
+                      <div class="aui-list-item-title">訂單編號：1093894</div>
+                      <div class="aui-list-item-right"><span class="aui-iconfont aui-icon-right"></span></div>
+                    </div>
+                    <div class="aui-list-item-text">
+                      發票號碼：123123123
+                    </div>
+                    <div class="aui-list-item-text aui-text-primary">
+                        已出貨
+                    </div>
+                  </div>
+                </div>
+                <div class="aui-info" style="padding-top:0">
+                  <div class="aui-info-item">2017-07-14 10:31</div>
+                  <div class="aui-info-item">
+                    <span class="aui-text-danger aui-bold aui-font-size-16">NT$25000</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="aui-list-item">
+              <a href="order_info.html">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/04.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text">
+                      <div class="aui-list-item-title">訂單編號：1093894</div>
+                      <div class="aui-list-item-right"><span class="aui-iconfont aui-icon-right"></span></div>
+                    </div>
+                    <div class="aui-list-item-text">
+                      發票號碼：123123123
+                    </div>
+                    <div class="aui-list-item-text aui-text-primary">
+                        已出貨
+                    </div>
+                  </div>
+                </div>
+                <div class="aui-info" style="padding-top:0">
+                  <div class="aui-info-item">2017-07-14 10:31</div>
+                  <div class="aui-info-item">
+                    <span class="aui-text-danger aui-bold aui-font-size-16">NT$25000</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 已完成 -->
+      <div class="aui-card-list">
+        <div class="aui-card-list-content">
+          <ul class="aui-list aui-media-list">
+            <li class="aui-list-item">
+              <a href="order_info.html">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/05.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text">
+                      <div class="aui-list-item-title">訂單編號：1093894</div>
+                      <div class="aui-list-item-right"><span class="aui-iconfont aui-icon-right"></span></div>
+                    </div>
+                    <div class="aui-list-item-text">
+                      發票號碼：123123123
+                    </div>
+                    <div class="aui-list-item-text aui-text-primary">
+                        已出貨
+                    </div>
+                  </div>
+                </div>
+                <div class="aui-info" style="padding-top:0">
+                  <div class="aui-info-item">2017-07-14 10:31</div>
+                  <div class="aui-info-item">
+                    <span class="aui-text-danger aui-bold aui-font-size-16">NT$25000</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="aui-list-item">
+              <a href="order_info.html">
+                <div class="aui-media-list-item-inner">
+                  <div class="aui-list-item-media">
+                    <img src="image/product/06.jpg" />
+                  </div>
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text">
+                      <div class="aui-list-item-title">訂單編號：1093894</div>
+                      <div class="aui-list-item-right"><span class="aui-iconfont aui-icon-right"></span></div>
+                    </div>
+                    <div class="aui-list-item-text">
+                      發票號碼：123123123
+                    </div>
+                    <div class="aui-list-item-text aui-text-primary">
+                        已出貨
+                    </div>
+                  </div>
+                </div>
+                <div class="aui-info" style="padding-top:0">
+                  <div class="aui-info-item">2017-07-14 10:31</div>
+                  <div class="aui-info-item">
+                    <span class="aui-text-danger aui-bold aui-font-size-16">NT$25000</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 篩選條件 popup -->
+    <div class="popup popup-filter">
+      <!-- 表頭 -->
+      <header class="aui-bar aui-bar-nav aui-text-left header">
+        <div class="aui-title">訂單篩選</div>
+        <!-- 關閉鈕 -->
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+      </header>
+      <div class="popup-content">
+        <section class="p_detail aui-bg-white">
+          <ul class="aui-list aui-list-in aui-bg-white">
+            <li class="aui-list-header">
+              請選擇篩選條件
+            </li>
+            <div class="optionList">
+                <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label">
+                      關鍵字
+                    </div>
+                    <div class="aui-list-item-input">
+                      <input type="text" placeholder="請輸入產品關鍵字" />
+                    </div>
+                  </div>
+                </li>
+              <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-title">條件1</div>
+                    <div class="aui-list-item-right select-type">
+                      <span class="aui-label active aui-label-outlined">選項1</span>
+                      <span class="aui-label aui-label-outlined">選項2</span>
+                      <span class="aui-label aui-label-outlined">選項3</span>
+                    </div>
+                  </div>
+                </li>
+              <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-title">條件2</div>
+                    <div class="aui-list-item-right select-type">
+                      <span class="aui-label active aui-label-outlined">選項1</span>
+                      <span class="aui-label aui-label-outlined">選項2</span>
+                      <span class="aui-label aui-label-outlined">選項3</span>
+                    </div>
+                  </div>
+                </li>
+              <li class="aui-list-item">
+                  <div class="aui-list-item-inner">
+                    <div class="aui-list-item-title">條件3</div>
+                    <div class="aui-list-item-right select-type">
+                      <span class="aui-label active aui-label-outlined">選項1</span>
+                      <span class="aui-label aui-label-outlined">選項2</span>
+                      <span class="aui-label aui-label-outlined">選項3</span>
+                    </div>
+                  </div>
+                </li>
+            </div>
+        </section>
+      </div>
+      <!-- 按鈕 -->
+      <div class="aui-content popup-footer d_flex">
+        <div class="aui-btn aui-btn-block bg-default bordered-0 w-100 hide-popup">確認</div>
+      </div>
+    </div>
+    <!-- 底部導航 -->
+    <footer class="aui-bar aui-bar-tab">
+      <div class="aui-bar-tab-item footer_home aui-active" tapmode>
+        <a href="index.html">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dianpu"></use>
+          </svg>
+          <div class="aui-bar-tab-label">首頁</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_shop" tapmode>
+        <a href="cate.html">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-goumai"></use>
+          </svg>
+          <div class="aui-bar-tab-label">分類</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="order.html">
+          <div class="aui-badge">5</div>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dingdan"></use>
+          </svg>
+          <div class="aui-bar-tab-label">訂單</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="cart_list.html">
+          <div class="aui-badge">5</div>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-gouwu"></use>
+          </svg>
+          <div class="aui-bar-tab-label">購物車</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_member d_none" tapmode>
+        <a href="member.html">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-wode"></use>
+          </svg>
+          <div class="aui-bar-tab-label">會員專區</div>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#tab_box .aui-card-list').css('display', 'none');
+      $('#tab_box .aui-card-list')
+        .eq(0)
+        .css('display', 'block');
+      $('#tab .aui-tab-item').click(function() {
+        var index = $('#tab .aui-tab-item').index($(this));
+        $('#tab .aui-tab-item').attr('class', 'aui-tab-item');
+        $(this).attr('class', 'aui-tab-item aui-active');
+
+        $('#tab_box .aui-card-list').css('display', 'none');
+        $('#tab_box .aui-card-list')
+          .eq(index)
+          .css('display', 'block');
+      });
+    });
+  </script>
+</html>

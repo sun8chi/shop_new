@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <style>
+      .close_notice {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        z-index: 99999;
+      }
+      .close_notice span {
+        position: relative;
+        margin-top: 0.75rem;
+        padding: 0.5rem;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0.7rem auto;
+        display: block;
+        width: 90%;
+        border-radius: 50px;
+        text-align: center;
+        background: #ffe003;
+        color: #333;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      }
+      .close_notice span::before {
+        content: '';
+        position: absolute;
+        top: -9px;
+        right: 2rem;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #ffe003 transparent;
+      }
+    </style>
+    <title>商店</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav aui-text-left header" id="headerTop">
+      <div class="aui-title">產品介紹</div>
+    </header>
+    <!-- 商品輪播圖 -->
+    <section class="aui-padded-b-0">
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="image/product/01.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/02.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/04.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="image/product/05.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-pagination pagHome"></div>
+      </div>
+    </section>
+    <!-- 產品名稱/價格 -->
+    <section class="aui-bg-white aui-padded-t-10 aui-margin-b-10 p_info">
+      <div class="aui-content-padded aui-margin-t-0">
+        <div class="aui-title aui-ellipsis-2">長得可愛又好吃餅乾在這裡</div>
+        <div class="aui-margin-t-10">
+          <p class="color-orange">NT$<span class="aui-font-size-20">590</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- 產品細節 tab -->
+    <section class="p_detail aui-bg-white">
+      <div class="aui-tab" id="tab">
+        <div class="aui-tab-item" id="p_intro">商品介紹</div>
+        <div class="aui-tab-item aui-active" id="p_type">產品規格</div>
+      </div>
+      <!-- 商品介紹 -->
+      <div class="aui-tab-content p_intro aui-bg-white aui-content-padded">
+        這是一個很好吃的餅乾唷
+      </div>
+      <!-- 產品規格 -->
+      <div class="aui-tab-content p_type aui-content-padded">
+        顏色：黃色/綠色/紅色 尺寸：大/小
+      </div>
+    </section>
+    <footer class="aui-bar aui-bar-tab aui-margin-t-15">
+      <a class="aui-bar-tab-item bg-danger aui-text-white addOneBtn">我要+1</a>
+      <a class="aui-bar-tab-item aui-bg-gray aui-text-white addOneOK" style="display:none;">已成功+1，請關閉視窗</a>
+    </footer>
+    <div class="close_notice" style="display:none;">
+      <span>
+        請關閉此視窗！
+      </span>
+    </div>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/aui-tab.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/sweetalert2.all.min.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // +1按鈕
+      $('.addOneBtn').click(function(e) {
+        e.preventDefault();
+        $('.addOneBtn').hide();
+        $('.addOneOK').show();
+        Swal.fire({
+          icon: 'success',
+          title: '已成功+1，請關閉視窗！',
+          confirmButtonText: `確認`
+        }).then(result => {
+          $('.close_notice').show();
+        });
+      });
+      // 介紹的 tab
+      var tab = new auiTab({
+        element: document.getElementById('tab')
+      });
+      $('.p_type').hide();
+      $('.p_detail .aui-tab-item').click(function() {
+        var N = $(this).attr('id');
+        $('.p_detail .aui-tab-content').hide();
+        $('.' + N).show();
+      });
+    });
+  </script>
+</html>

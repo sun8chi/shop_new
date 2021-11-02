@@ -1,0 +1,69 @@
+//color
+$color-default: #e98044 !important;
+// $color-default:#00bcd4!important;
+$color-orange: #f05e1c !important;
+$color-danger: rgb(219, 79, 58) !important;
+$color-green: rgb(62, 165, 84) !important;
+$color-white: #fff !important;
+$color-gray: #757575 !important;
+$color-light-gray: #f7f7f7 !important;
+
+//font
+$font-size-default: 20px;
+$fz-small: $font-size-default * 0.7;
+$font-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+
+@mixin autoWidth {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.color-default {
+  color: $color-default ;
+}
+.color-white {
+  color: #fff !important;
+}
+.text-right {
+    text-align: right!important;
+}
+.d_none {
+  display: none !important;
+}
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+.just_content_around {
+  justify-content: space-around;
+}
+.just_content_between {
+  justify-content: space-between;
+}
+.just_content_start {
+  justify-content: flex-start;
+}
+.ml_auto {
+  margin-left: auto;
+}
+.mb_1 {
+  margin-bottom: 1rem !important;
+}
+.mb_2 {
+  margin-bottom: 2rem !important;
+}
+.pb_0 {
+  padding-bottom: 0 !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+.bordered-0 {
+  border-radius: 0 !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <link rel="stylesheet" href="css/style.css?v10">
+    <title>商店</title>
+</head>
+
+<body>
+    <header class="aui-bar aui-bar-nav aui-text-left header" id="headerTop">
+        <a href="index.html" class="aui-pull-left aui-btn">
+            <span class="aui-iconfont aui-icon-home"></span> 
+        </a>
+        <a href="order_search.html" class="aui-pull-right aui-btn">
+            <span class="aui-iconfont aui-icon-cert"></span>
+        </a>
+        <div class="aui-title">產品細節</div>
+    </header>
+    <!-- 商品輪播圖 -->
+    <section class="aui-padded-b-0">
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image/product/07.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="image/product/02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="image/product/03.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination pagHome"></div>
+        </div>
+    </section>
+    <div class="countdown"></div>
+    <!-- 產品名稱/價格 -->
+    <section class="aui-bg-white aui-padded-t-10 aui-padded-b-5 p_info">
+        <div class="aui-content-padded aui-margin-t-0">
+            <div class="aui-title aui-ellipsis-2 p_name">現代便攜式隨身榨汁機-全新升級2018新款</div>
+            <div class="aui-margin-t-10 p_price">
+                <p>一般價NT9,999 會員價NT$ <span class="aui-text-danger aui-font-size-20">7,699</span></p>
+            </div>
+        </div>
+        <hr>
+        <div class="aui-content-padded aui-margin-t-0 p_info_list">
+            <div class="aui-info">
+                <div class="aui-info-item">
+                    <span class="aui-margin-l-5">商品分類</span>
+                </div>
+                <a href="#" class="aui-info-item">母嬰用品</a>
+            </div>
+            <div class="aui-info">
+                <div class="aui-info-item">
+                    <span class="aui-margin-l-5">商品代號</span>
+                </div>
+                <div class="aui-info-item">D168-0005-4</div>
+            </div>
+            <div class="aui-info">
+                <div class="aui-info-item aui-text-center">
+                    <span class="aui-margin-l-5">全館折扣 結帳時再<span class="aui-text-danger"> 8.5折</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 團購優惠 -->
+    <div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-list-in aui-bg-white">
+            <li class="aui-list-header aui-bg-gray aui-text-gray">
+                團購優惠
+            </li>
+            <div class="p_group">
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">1~2件</div>
+                        <div class="aui-list-item-right">平均每件<span class="aui-text-danger">$850元</span></div>
+                    </div>
+                </li>
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">3件</div>
+                        <div class="aui-list-item-right">平均每件<span class="aui-text-danger">$750元</span></div>
+                    </div>
+                </li>
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">5件以上</div>
+                        <div class="aui-list-item-right">平均每件<span class="aui-text-danger">$650元</span></div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    </section>
+    <!-- 產品細節tab -->
+    <section class="p_detail">
+        <div class="aui-tab" id="tab">
+            <div class="aui-tab-item" id="p_intro">商品介紹</div>
+            <div class="aui-tab-item aui-active" id="p_type">產品規格</div>
+        </div>
+        <div class="aui-tab-content p_intro aui-content-padded">
+            <img src="image/detail/true.jpeg" alt="">
+            <img src="image/detail/true-1.jpeg" alt="">
+            <img src="image/detail/true-2.jpeg" alt="">
+            <img src="image/detail/true-3.jpeg" alt="">
+            <img src="image/detail/true-4.jpeg" alt="">
+            <img src="image/detail/true-5.jpeg" alt="">
+            <img src="image/detail/true-6.jpeg" alt="">
+            <img src="image/detail/true-7.jpeg" alt="">
+            <img src="image/detail/true-8.jpeg" alt="">
+            <img src="image/detail/true-9.jpeg" alt="">
+            <img src="image/detail/true-10.jpeg" alt="">
+            <img src="image/detail/true-11.jpeg" alt="">
+            <img src="image/detail/true-12.jpeg" alt="">
+            <img src="image/detail/true-13.jpeg" alt="">
+        </div>
+        <div class="aui-tab-content p_type aui-content-padded">
+            顏色：黃色/綠色/紅色 尺寸：大/小
+        </div>
+    </section>
+    <footer class="aui-bar aui-bar-tab aui-margin-t-15">
+        <a href="cart_list.html" class="aui-bar-tab-item aui-bg-danger aui-text-white" tapmode style="width: auto;">立即購買</a>
+    </footer>
+</body>
+    <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script> <script type="text/javascript" src="./script/iconfont.js"></script>
+    <script type="text/javascript" src="./script/jquery.countdown.js"></script>
+    <script type="text/javascript" src="./script/script.js?v10"></script>
+</html>
+<script type="text/javascript" src="./script/swiper.min.js"></script>
+<script type="text/javascript" src="./script/aui-tab.js"></script>
+<script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script> <script type="text/javascript" src="./script/iconfont.js"></script>
+<script type="text/javascript" src="./script/jquery.countdown.js"></script>
+<script type="text/javascript" src="./script/script.js?v10"></script>
+<script>
+$(function() {
+
+    var note = $('#note'),
+        ts = new Date(2012, 0, 1),
+        newYear = true;
+
+    if ((new Date()) > ts) {
+        // The new year is here! Count towards something else.
+        // Notice the *1000 at the end - time must be in milliseconds
+        ts = (new Date()).getTime() + 15 * 24 * 60 * 60 * 1000;
+        newYear = false;
+    }
+
+    $('.countdown').countdown({
+        timestamp: ts,
+        callback: function(days, hours, minutes, seconds) {
+
+            var message = "";
+
+            message += days + " day" + (days == 1 ? '' : 's') + ", ";
+            message += hours + " hour" + (hours == 1 ? '' : 's') + ", ";
+            message += minutes + " minute" + (minutes == 1 ? '' : 's') + " and ";
+            message += seconds + " second" + (seconds == 1 ? '' : 's') + " <br />";
+
+            if (newYear) {
+                message += "left until the new year!";
+            } else {
+                message += "left to 10 days from now!";
+            }
+
+            note.html(message);
+        }
+    });
+
+});
+</script>
+<script type="text/javascript">
+apiready = function() {
+    api.parseTapmode();
+}
+var tab = new auiTab({
+    element: document.getElementById("tab"),
+}, function(ret) {
+    console.log(ret)
+});
+
+$(document).ready(function() {
+    $(".p_type").hide();
+    $(".p_detail .aui-tab-item").click(function() {
+        var N = $(this).attr("id");
+        $(".p_detail .aui-tab-content").hide();
+        $("." + N).show();
+    });
+});
+</script>

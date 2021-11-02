@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="css/admin.css?v10" />
+    <title>商店</title>
+  </head>
+
+  <body>
+    <header class="aui-bar aui-bar-nav" id="headerTop">
+      <a href="index.html" class="aui-pull-left aui-btn">
+        <ion-icon class="aui-iconfont" name="home-outline"></ion-icon>
+      </a>
+      <div class="aui-title">優惠設定</div>
+      <!-- 報表查詢按鈕 -->
+      <a href="#" class="aui-pull-right aui-btn">
+        <ion-icon class="aui-iconfont" name="bar-chart-outline"></ion-icon>
+      </a>
+    </header>
+    <div class="aui-content aui-margin-b-15">
+      <div class="aui-padded-10">
+        <div class="aui-text-right">
+          <a href="admin_edit_sale.html" class="aui-btn">回活動列表</a>
+        </div>
+        <h3 class="aui-padded-10 aui-text-primary">每滿額現金回饋（每滿___元折__元）</h3>
+      </div>
+
+      <ul class="aui-list aui-form-list">
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-label-icon">
+              滿額金額
+            </div>
+            <div class="aui-list-item-input">
+              <input type="text" inputmode="numeric" placeholder="例如 1000" />
+            </div>
+          </div>
+        </li>
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-label-icon">
+              折抵金額
+            </div>
+            <div class="aui-list-item-input">
+              <input type="text" inputmode="numeric" placeholder="例如 20" />
+            </div>
+          </div>
+        </li>
+        <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+            <div class="aui-list-item-label-icon">
+              優惠期限
+            </div>
+            <div class="aui-list-item-input">
+              <input type="date" />
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="aui-content-padded">
+        <div class="aui-btn aui-btn-primary aui-btn-block">確認</div>
+      </div>
+    </div>
+    <!-- 底部導航 -->
+    <footer class="aui-bar aui-bar-tab">
+      <div class="aui-bar-tab-item footer_home aui-active" tapmode>
+        <a href="#">
+          <ion-icon name="share-social-outline"></ion-icon>
+          <div class="aui-bar-tab-label">分享商店</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_shop" tapmode>
+        <a href="#">
+          <ion-icon name="notifications-outline"></ion-icon>
+          <div class="aui-bar-tab-label">設定通知</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="admin_edit.html">
+          <ion-icon name="settings-outline"></ion-icon>
+          <div class="aui-bar-tab-label">商店設定</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="#">
+          <ion-icon name="document-outline"></ion-icon>
+          <div class="aui-bar-tab-label">操作說明</div>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/sweetalert2.all.min.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+
+    <link rel="stylesheet" href="css/jquery.countdown.css" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <title>商店</title>
+  </head>
+
+  <body style="min-height: 100vh;">
+    <header class="aui-bar aui-bar-nav" id="headerTop">
+      <a href="index.html" class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-home"></span>
+      </a>
+      <!-- 搜尋欄 cate-search -->
+      <div class="aui-title cate-search" style="left:2rem; right: 2rem;">
+        <div class="aui-searchbar" id="search">
+          <div class="aui-searchbar-input aui-border-radius">
+            <i class="aui-iconfont aui-icon-search"></i>
+            <input type="search" placeholder="請輸入關鍵字" id="search-input" />
+            <div class="aui-searchbar-clear-btn">
+              <i class="aui-iconfont aui-icon-close"></i>
+            </div>
+          </div>
+          <div class="aui-searchbar-btn" tapmode>取消</div>
+        </div>
+      </div>
+    </header>
+    <div id="topNav" class="swiper-container aui-tab">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide aui-tab-item aui-active active" id="cate01"><span>女嬰用品</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate02"><span>家電</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate03"><span>經典限量球鞋</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate04"><span>美妝保養</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate05"><span>聖誕好禮</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate06"><span>3C周邊</span></div>
+        <div class="swiper-slide aui-tab-item" id="cate07"><span>家電用品</span></div>
+      </div>
+    </div>
+
+    <!-- 標籤 section-tags-->
+    <section class="section-tags">
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+      <div class="aui-label aui-label-primary">#標籤名稱</div>
+    </section>
+    <div class="cate-box">
+      <!-- 分類1 .cate01 -->
+      <div class="aui-content shop-list cate01">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/02.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/03.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/01.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 分類2 cate02-->
+      <div class="aui-content shop-list cate02">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/06.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/05.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/04.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 分類3 cate03-->
+      <div class="aui-content shop-list cate03">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/03.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 分類4 cate04-->
+      <div class="aui-content shop-list cate04">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/03.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 分類5 cate05-->
+      <div class="aui-content shop-list cate05">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/03.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 分類6 cate06-->
+      <div class="aui-content shop-list cate06">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/03.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 分類7 cate07-->
+      <div class="aui-content shop-list cate07">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <!-- item -->
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/03.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒222
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                  <div class="aui-info-item ">
+                    <div class="aui-label aui-label-warning">降</div>
+                  </div>
+                </div>
+                <div class="aui-list-item-text ">
+                  <div class="aui-list-item-text aui-font-size-12">銷量 142</div>
+                  <div class="aui-list-item-right">
+                    <div class="aui-btn aui-btn-primary btn-popup" data-popup="popup-addcart">加入購物車</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 加入購物車popup -->
+    <div class="popup popup-addcart">
+      <header class="aui-bar aui-bar-nav aui-text-left header aui-bg-default aui-text-gray" id="header">
+        <a href="#" class="aui-pull-right aui-btn hide-popup">
+          <span class="aui-iconfont aui-icon-close aui-text-gray"></span>
+        </a>
+        <div class="aui-title">加入購物車</div>
+      </header>
+      <div class="aui-content" style="">
+        <ul class="aui-list aui-select-list aui-bg-white">
+          <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+              <div class="aui-list-item-media">
+                <a href="detail.html" target="_blank"><img src="image/product/01.jpg"/></a>
+              </div>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-text aui-ellipsis-2">
+                  棉花棒環保棉花棉花棒棒棉花棒花棒棒棉花棒花棒棒棉花棒
+                </div>
+                <div class="aui-info aui-margin-t-5 " style="padding:0">
+                  <div class="aui-info-item aui-text-danger shop-price">
+                    NT$ 650
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-list-in aui-bg-white">
+          <li class="aui-list-header">
+            選擇數量與規格
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <div class="aui-list-item-title">數量</div>
+              <div class="aui-list-item-right">
+                <div class="aui-bar aui-bar-btn aui-bar-btn-sm" style="width:60%;float:right">
+                  <div class="aui-bar-btn-item">
+                    <i id="1_-" class="aui-iconfont aui-icon-minus" onclick="checkPositive()"></i>
+                  </div>
+                  <div class="aui-bar-btn-item">
+                    <input type="text" style="text-align: center;" name="count[]" value="1" onclick="changeTotal()" readonly="readonly" />
+                  </div>
+                  <div class="aui-bar-btn-item">
+                    <i id="1_+" class="aui-iconfont aui-icon-plus" onclick="checkPositive()"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <div class="aui-list-item-title">規格</div>
+              <div class="aui-list-item-right select-type" id="type_01">
+                <span class="aui-label aui-label-default aui-label-outlined">11吋</span>
+                <span class="aui-label aui-label-default aui-label-outlined">13吋</span>
+                <span class="aui-label aui-label-default aui-label-outlined">15吋</span>
+              </div>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <div class="aui-list-item-title">尺寸</div>
+              <div class="aui-list-item-right select-type" id="type_02">
+                <span class="aui-label aui-label-default aui-label-outlined">玫瑰金</span>
+                <span class="aui-label aui-label-default aui-label-outlined">銀色</span>
+                <span class="aui-label aui-label-default aui-label-outlined">太空灰</span>
+              </div>
+            </div>
+          </li>
+          <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+              <div class="aui-list-item-title">小計</div>
+              <div class="aui-list-item-right aui-font-size-16 aui-text-danger">NT$<span class="pTotal">5000</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="aui-content-padded">
+        <div class="aui-btn aui-btn-block aui-btn-warning aui-btn-sm">加入購物車</div>
+      </div>
+    </div>
+    <!-- 底部導航 -->
+    <footer class="aui-bar aui-bar-tab">
+      <div class="aui-bar-tab-item footer_home aui-active" tapmode>
+        <a href="index.html">
+          <i class="aui-iconfont aui-icon-home"></i>
+          <div class="aui-bar-tab-label">前台首頁</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_shop" tapmode>
+        <a href="shop.html">
+          <i class="aui-iconfont aui-icon-star"></i>
+          <div class="aui-bar-tab-label">採購列表</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_cart" tapmode>
+        <a href="cart_list.html">
+          <div class="aui-badge">5</div>
+          <i class="aui-iconfont aui-icon-cart"></i>
+          <div class="aui-bar-tab-label">購物車</div>
+        </a>
+      </div>
+      <div class="aui-bar-tab-item footer_member d_none" tapmode>
+        <a href="member.html">
+          <i class="aui-iconfont aui-icon-my"></i>
+          <div class="aui-bar-tab-label">會員專區</div>
+        </a>
+      </div>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/jquery.countdown.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript">
+    var mySwiper = new Swiper('#topNav', {
+      freeMode: true,
+      freeModeMomentumRatio: 0.5,
+      slidesPerView: 'auto'
+    });
+
+    swiperWidth = mySwiper.container[0].clientWidth;
+    maxTranslate = mySwiper.maxTranslate();
+    maxWidth = -maxTranslate + swiperWidth / 2;
+
+    $('.swiper-container').on('touchstart', function(e) {
+      e.preventDefault();
+    });
+
+    mySwiper.on('tap', function(swiper, e) {
+      e.preventDefault();
+
+      slide = swiper.slides[swiper.clickedIndex];
+      slideLeft = slide.offsetLeft;
+      slideWidth = slide.clientWidth;
+      slideCenter = slideLeft + slideWidth / 2;
+      // 被点击slide的中心点
+
+      mySwiper.setWrapperTransition(300);
+
+      if (slideCenter < swiperWidth / 2) {
+        mySwiper.setWrapperTranslate(0);
+      } else if (slideCenter > maxWidth) {
+        mySwiper.setWrapperTranslate(maxTranslate);
+      } else {
+        nowTlanslate = slideCenter - swiperWidth / 2;
+
+        mySwiper.setWrapperTranslate(-nowTlanslate);
+      }
+
+      $('#topNav  .active').removeClass('active aui-active');
+      $('#topNav .swiper-slide')
+        .eq(swiper.clickedIndex)
+        .addClass('active aui-active');
+    });
+  </script>
+  <script type="text/javascript">
+    // $(document).ready(function() {
+    //     $("#footer").load("footer.html");
+    // });
+    // popup
+    $(document).ready(function() {
+      $('.shop-list').hide();
+      $('.cate01').show();
+      $('#topNav .swiper-slide').click(function() {
+        var N = $(this)
+          .attr('id')
+          .substr(4);
+        $('.shop-list').hide();
+        $('.cate' + N).show();
+      });
+    });
+
+    // 選擇器
+    $(function() {
+      $('#type_01 .aui-label').click(function() {
+        $('#type_01 .aui-label').removeClass('aui-label-info');
+        $(this).addClass('aui-label-info');
+        $(this).removeClass('aui-label-default');
+      });
+    });
+    $(function() {
+      $('#type_02 .aui-label').click(function() {
+        $('#type_02 .aui-label').removeClass('aui-label-info');
+        $(this).addClass('aui-label-info');
+        $(this).removeClass('aui-label-default');
+      });
+    });
+
+    //加減計算
+    function checkPositive() {
+      let id = event.target.id;
+      console.log(id);
+      let split = id.split('_');
+      let idx = parseInt(split[0]) - 1;
+      console.log(idx);
+      var x = document.getElementsByName('count[]');
+      if (split[1] == '+') {
+        x[idx].value = parseInt(x[idx].value) + 1;
+      } else if (split[1] == '-') {
+        x[idx].value = parseInt(x[idx].value) - 1;
+      } else {
+      }
+      self.changeTotal();
+    }
+    // 顯示剩餘數量
+    function changeTotal(x) {
+      var x = document.getElementsByName('count[]');
+      for (let a = 0; a < x.length; a++) {
+        if (x[a].value < 0) {
+          x[a].value = 0;
+        }
+      }
+      var total_count = 0;
+      for (let a = 0; a < x.length; a++) {
+        let t = parseInt(x[a].value);
+        total_count += t;
+      }
+      console.log(`total = ${total_count}`);
+      document.getElementById('show_total').innerHTML = total_count;
+    }
+  </script>
+</html>

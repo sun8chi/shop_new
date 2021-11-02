@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no" />
+    <link rel="stylesheet" href="css/style.css?v10" />
+    <title>商店</title>
+  </head>
+  <body class="page-member">
+    <!-- 顶部 -->
+    <section class="aui-content" style="padding:0;" id="user-info">
+      <div class="aui-list aui-media-list aui-list-noborder aui-bg-primary">
+        <div class="aui-list-item aui-list-item-middle">
+          <div class="aui-media-list-item-inner ">
+            <div class="aui-list-item-media" style="width:3rem;">
+              <img src="image/icon/user.png" class="aui-img-round" />
+            </div>
+            <a href="member_edit.html" class="aui-list-item-inner aui-list-item-arrow">
+              <div class="aui-list-item-text text-white aui-font-size-18">林美麗</div>
+              <div class="aui-list-item-text text-white">
+                <div>金級會員 TW000001</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 金幣 -->
+    <section class="aui-content aui-grid">
+      <div class="aui-row">
+        <a href="points_list.html" class="aui-col-xs-4 aui-border-r">
+          <big class="aui-text-primary">0.00<small> 分</small></big>
+          <div class="aui-gird-lable aui-font-size-12">註冊分</div>
+        </a>
+        <a href="points_list.html" class="aui-col-xs-4 aui-border-r">
+          <big class="aui-text-warning">0.00<small> 分</small></big>
+          <div class="aui-gird-lable aui-font-size-12">現金分</div>
+        </a>
+        <a href="points_list.html" class="aui-col-xs-4">
+          <big class="aui-text-success">0.00<small> 分</small></big>
+          <div class="aui-gird-lable aui-font-size-12">購物分</div>
+        </a>
+      </div>
+    </section>
+    <!-- 個人快訊 -->
+    <section class="aui-content">
+      <ul class="aui-list aui-list-in">
+        <li class="aui-list-header">
+          個人快訊
+        </li>
+        <li class="aui-list-item">
+          <a href="#" class="aui-list-item-inner aui-list-item-arrow">
+            <div class="aui-list-item-title text-gray aui-font-size-12">尚差1位可達到鑽石會員</div>
+            <div class="aui-list-item-right">
+              <div class="aui-label aui-label-primary">立即升等</div>
+            </div>
+          </a>
+        </li>
+        <li class="aui-list-item">
+          <a href="#" class="aui-list-item-inner aui-list-item-arrow">
+            <div class="aui-list-item-title text-gray aui-font-size-12">您的重銷有效日至2017/12/12</div>
+            <div class="aui-list-item-right">
+              <div class="aui-label aui-label-primary">立即重銷</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- icon功能 -->
+    <section>
+      <div class="swiper-member">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="image/icon/m_plus.png" alt="" />線上充值</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/icon/m_star.png" alt="" />線上開戶</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/icon/m_cart.png" alt="" />線上購物</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/icon/m_up.png" alt="" />線上升級</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/icon/m_news.png" alt="" />最新消息</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/icon/m_open.png" alt="" />線上激活</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/icon/m_team.png" alt="" />商務中心</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 最新快訊 -->
+    <section class="hot-news">
+      <div class="swiper-news">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide aui-ellipsis-1">這是一些最新消息的輪播這是一些最新消息的輪播這是一些最新消息的輪播</div>
+          <div class="swiper-slide">這是一些最新消息的輪播2</div>
+          <div class="swiper-slide">這是一些最新消息的輪播3</div>
+          <div class="swiper-slide">這是一些最新消息的輪播4</div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="./script/swiper.min.js"></script>
+  <script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./script/iconfont.js"></script>
+  <script type="text/javascript" src="./script/script.js?v10"></script>
+  <script>
+    var swiper_member = new Swiper('.swiper-member', {
+      slidesPerView: 3,
+      slidesPerColumn: 3
+    });
+    var swiper_news = new Swiper('.swiper-news', {
+      slidesPerView: 1,
+      autoplay: 3000
+    });
+  </script>
+</html>
