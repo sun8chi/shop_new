@@ -22,25 +22,24 @@ $('.toggleSearchBar').click(function (e) {
   e.preventDefault();
   $('.search_bar').toggleClass('show');
 });
-$('.counter').click(function(e) {
-  let action = e.target.className;
-  if (action == 'add') {
-    let num = parseInt(this.children[1].innerHTML);
+$('.counterNum .dis').click(function(e) {
+  e.preventDefault();
+  let num = parseInt($(this).siblings('.num').text());
+  if (num > 0) {
+    num -= 1;
+    $(this).siblings('.num').text(num)
+    $(this).css('color','#F05E1C');
+  }
+  if (num == 0) {
+    $(this).css('color','#c9c9c9');
+  }
+});
+$('.counterNum .add').click(function(e) {
+  let num = parseInt($(this).siblings('.num').text());
+  if (num >= 0) {
     num += 1;
-    this.children[1].innerHTML = num;
-    if (num > 0) {
-      this.children[0].style.color = '#F05E1C';
-    }
-  } else if (action == 'dis') {
-    let num = parseInt(this.children[1].innerHTML);
-    if (num > 0) {
-      num -= 1;
-      this.children[1].innerHTML = num;
-      this.children[0].style.color = '#F05E1C';
-    }
-    if (num == 0) {
-      this.children[0].style.color = '#c9c9c9';
-    }
+    $(this).siblings('.num').text(num)
+    $(this).css('color','#F05E1C');
   }
 });
 

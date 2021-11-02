@@ -2,17 +2,27 @@
   display: flex;
   align-items: center;
   overflow: scroll;
+  scroll-padding: 0;
   background: transparent!important;
+
   .scroll_item {
     flex-shrink: 0;
-    padding: .5rem;
+    padding: .5rem .75rem;
     background: #fff;
     color: #757575;
-    border-bottom: 2px solid #eee;
+
     &.active {
       background: $color-default;
       color: #fff;
-      border-bottom: 2px solid #eee;
+    }
+  }
+  &.scroll_product {
+    display: block;
+    .scroll_product_list {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-bottom: 2px solid #ebebeb;
     }
   }
 }

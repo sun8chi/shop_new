@@ -1,121 +1,124 @@
 釘選在上方，加上class="stickytop"
 
 【店家後台】
-https://sun8chi.github.io/shop_mobile/admin_edit.html#
+https://sun8chi.github.io/shop_new/admin_edit.html#
 
 【首頁】
-https://sun8chi.github.io/shop_mobile/index.html
+https://sun8chi.github.io/shop_new/index.html
 
 【首頁-單一規格】
-https://sun8chi.github.io/shop_mobile/index2.html
+https://sun8chi.github.io/shop_new/index2.html
 
 【首頁-多規格】
-https://sun8chi.github.io/shop_mobile/index3.html
+https://sun8chi.github.io/shop_new/index3.html
 
 【首頁-分類欄用scroll bar】
-https://sun8chi.github.io/shop_mobile/index4.html
+https://sun8chi.github.io/shop_new/index4.html
 
 【分類列表-店家圖】
-https://sun8chi.github.io/shop_mobile/cate.html
+https://sun8chi.github.io/shop_new/cate.html
 
 【分類列表-直接選數量】
-https://sun8chi.github.io/shop_mobile/cate_list.html
+https://sun8chi.github.io/shop_new/cate_list.html
 
 【小分類】
-https://sun8chi.github.io/shop_mobile/cate2.html
+https://sun8chi.github.io/shop_new/cate2.html
 
 【產品細節】
-https://sun8chi.github.io/shop_mobile/p_detail.html
+https://sun8chi.github.io/shop_new/p_detail.html
 
 【我的訂單】
-https://sun8chi.github.io/shop_mobile/order.html
+https://sun8chi.github.io/shop_new/order.html
 
 【訂單詳情-簡易】
-https://sun8chi.github.io/shop_mobile/order_detail.html
+https://sun8chi.github.io/shop_new/order_detail.html
 
 【訂單詳情】
-https://sun8chi.github.io/shop_mobile/order_info.html
+https://sun8chi.github.io/shop_new/order_info.html
 
 【訂購完成】
-https://sun8chi.github.io/shop_mobile/cart_success.html
+https://sun8chi.github.io/shop_new/cart_success.html
 
 【購物車-一頁流程】
-https://sun8chi.github.io/shop_mobile/cart.html
+https://sun8chi.github.io/shop_new/cart.html
 
 【登入】
-https://sun8chi.github.io/shop_mobile/login.html
+https://sun8chi.github.io/shop_new/login.html
 
 【註冊】
-https://sun8chi.github.io/shop_mobile/register.html
+https://sun8chi.github.io/shop_new/register.html
 
 【會員中心】
-https://sun8chi.github.io/shop_mobile/member.html
+https://sun8chi.github.io/shop_new/member.html
 
 【會員中心2】
-https://sun8chi.github.io/shop_mobile/my.html
+https://sun8chi.github.io/shop_new/my.html
 
 【點數明細】
-https://sun8chi.github.io/shop_mobile/points_list.html
+https://sun8chi.github.io/shop_new/points_list.html
 
 【個人資料】
-https://sun8chi.github.io/shop_mobile/member_edit.html
+https://sun8chi.github.io/shop_new/member_edit.html
 
 【變更支付密碼】
-https://sun8chi.github.io/shop_mobile/change_paycode.html
+https://sun8chi.github.io/shop_new/change_paycode.html
 
 【常用收件人管理】
-https://sun8chi.github.io/shop_mobile/address_manage.html
+https://sun8chi.github.io/shop_new/address_manage.html
 
 【編輯收件人】
-https://sun8chi.github.io/shop_mobile/address_edit.html
+https://sun8chi.github.io/shop_new/address_edit.html
 
 【活動快速購買/時間倒數】
-https://sun8chi.github.io/shop_mobile/brand.html
+https://sun8chi.github.io/shop_new/brand.html
 
 【訂單編號查詢】
-https://sun8chi.github.io/shop_mobile/order_search.html
+https://sun8chi.github.io/shop_new/order_search.html
 
 【產品細節-有倒數/團購】
-https://sun8chi.github.io/shop_mobile/detail.html
+https://sun8chi.github.io/shop_new/detail.html
 
 【結帳】
-https://sun8chi.github.io/shop_mobile/cart_list.html
+https://sun8chi.github.io/shop_new/cart_list.html
 
 【確認訂單】
-https://sun8chi.github.io/shop_mobile/cart_confirm.html
+https://sun8chi.github.io/shop_new/cart_confirm.html
 
 【採購頁】
-https://sun8chi.github.io/shop_mobile/shop.html
+https://sun8chi.github.io/shop_new/shop.html
 
 【業績頁】
-https://sun8chi.github.io/shop_mobile/performance.html
+https://sun8chi.github.io/shop_new/performance.html
 
 【商品列表頁】
-https://sun8chi.github.io/shop_mobile/shop_list.html
+https://sun8chi.github.io/shop_new/shop_list.html
 
 【單一產品-加一】
-https://sun8chi.github.io/shop_mobile/product_single.html
+https://sun8chi.github.io/shop_new/product_single.html
 
 【最新消息-列表】
-https://sun8chi.github.io/shop_mobile/news_list.html
+https://sun8chi.github.io/shop_new/news_list.html
 
 【最新消息-內頁】
-https://sun8chi.github.io/shop_mobile/news.html
+https://sun8chi.github.io/shop_new/news.html
 
 【文章頁】
-https://sun8chi.github.io/shop_mobile/article.html
+https://sun8chi.github.io/shop_new/article.html
 
 【退貨退款】
-https://sun8chi.github.io/shop_mobile/refunds.html
+https://sun8chi.github.io/shop_new/refunds.html
 
 【單獨選擇產品分類&產品】
-https://sun8chi.github.io/shop_mobile/single_product.html
+https://sun8chi.github.io/shop_new/single_product.html
 
 【電子名片編輯】
-https://sun8chi.github.io/shop_mobile/edit_bscard.html
+https://sun8chi.github.io/shop_new/edit_bscard.html
 
 【店家介紹】
-https://sun8chi.github.io/shop_mobile/store.html
+https://sun8chi.github.io/shop_new/store.html
 
 【開發票】
-https://sun8chi.github.io/shop_mobile/product_bill.html
+https://sun8chi.github.io/shop_new/product_bill.html
+
+【優惠活動】
+https://sun8chi.github.io/shop_new/admin_edit_sale.html
