@@ -1250,13 +1250,29 @@ select {
   flex-shrink: 0;
 }
 
+.h2_title {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #efefef;
+}
+
 .article {
   font-size: 1rem;
+  line-height: 1.7;
+}
+.article h2 {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .article h3 {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: bold;
-  color: #333;
+  color: #000;
   margin: 0.75em 0;
 }
 .article ul {
@@ -1268,13 +1284,16 @@ select {
 }
 .article ol {
   margin-left: 1rem;
+  color: #4a4a4a;
 }
 .article ol li {
   list-style: decimal;
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 .article p {
   margin-bottom: 0.75rem;
+  color: #4a4a4a;
 }
 
 .news_slider {
