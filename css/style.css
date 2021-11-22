@@ -1489,3 +1489,62 @@ a.add_p_btn span {
 .product_bill_edit_list .delete_item {
   margin-right: 0.75rem;
 }
+
+.share_card {
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  width: 96%;
+  margin: 0.5rem auto;
+}
+.share_card .user_image {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 0.75rem;
+}
+.share_card .user_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.share_card .name {
+  text-align: center;
+}
+
+.name_card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.share_list, .share_list2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.share_list span, .share_list2 span {
+  color: #6e6e6e;
+  margin-right: 0.5rem;
+}
+.share_list h4, .share_list2 h4 {
+  font-size: 1.1rem;
+}
+.share_list li, .share_list2 li {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+}
+
+.shareTotal, .dealTotal {
+  color: #e95d44;
+}
+
+.share_list {
+  margin-bottom: 1rem;
+}

@@ -122,3 +122,6 @@ https://sun8chi.github.io/shop_new/product_bill.html
 
 【優惠活動】
 https://sun8chi.github.io/shop_new/admin_edit_sale.html
+
+【業績頁-卡片式】
+https://sun8chi.github.io/shop_new/performance2.html
