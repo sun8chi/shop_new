@@ -1349,6 +1349,23 @@ select {
   padding-bottom: 0;
 }
 
+.right_menu_store {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 14px;
+}
+.right_menu_store h4 {
+  color: #353535;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.right_menu_store p {
+  color: #8e8e8e;
+  font-size: 14px;
+  margin-bottom: 0.25em;
+}
+
 .search_bar {
   display: none;
   background: #fff;
